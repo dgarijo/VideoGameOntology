@@ -1,4 +1,4 @@
-# VideGameOntology
+# VideoGameOntology
 Repository for developing collaboratively the video game ontology. 
 
 The Video Game Ontology is aimed at modelling video game related information. The main goal is to capture knowledge about events that happen in video games and information about players.
