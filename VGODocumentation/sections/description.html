@@ -1,0 +1,55 @@
+<h2>3. Video Game Description Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p><a href="#figure">Figure 1</a> shows an overview of the Video Game Ontology and how the concepts relate to one another.
+The most important concepts in the ontology are related to the video game itself (vgo:Game) and to the player of the game (vgo:Player). In addition, events (vgo:InstantaneousEvent) play a major role in the video game ontology. The events are used to track everything that has happened while playing the game, such as gaining achievements (vgo:Achievement), consuming items (vgo:Item) or making decisions. 
+<!--Since the main goal of this ontology is to capture the knowledge of how games are played and what happens during a gameplay session, the three concepts are the core parts of this ontology.-->
+</p>
+<p>As shown in <a href="#figure_ov">Figure 1</a>, the ontology extends concepts from <a href="http://xmlns.com/foaf/spec/">foaf</a>, <a href="http://wiki.dbpedia.org/Ontology">dbpedia</a>, <a href=http://purl.org/dc/terms/">"Dublin Core Terms</a>, <a href="http://schema.org/">schema</a> and <a href="http://www.heppnetz.de/projects/goodrelations/">Good Relations</a> vocabularies to define the videogame domain specific extension. gr:ProductOrService and schema:Product are used to describe concepts that are available for purchase in video games (e. g., purchasing a new item inside the game or unlocking additional characters with money).
+foaf:Agent and dbpedia:PopulatedPlace are used to describe the player in the Video Game Ontology, which enables to capture more metadata of the players participating in a game.
+In addition, dc:creator is used to define who has created each game (either a person or an organization).
+</p>
+	<div id="figure_ov" class="figure" style="text-align: center;">
+	<img src="images/modelo.svg" alt="A high level overview of vgo" width="1300">
+		<div style="text-align: center;">
+		<a href="#figure_ov">Figure 1</a>. A high level overview of vgo
+		</div>
+	</div>
+	
+	<h4>Achievements</h4>
+	<p> Achievements are commonly used in game industry to reward players for having accomplished a certain task in the game. There are multiple different achievements in games. However, the Video Game Ontology uses specific classification for different types of video game achievements, which should cover the majority. The various subclasses of vgo:Achievement are all based on the classification presented by <a href="http://dl.acm.org/citation.cfm?id=1621859">Markus Montola et al.</a> </p>
+	
+	<div id="figure_ach" class="figure" style="text-align: center;">
+	<img src="images/achievement-hierarchy.svg" alt="Achievement hierarchy in vgo" width="500">
+		<div style="text-align: center;">
+		<a href="#figure_ach">Figure 2</a>. Achievement hierarchy in vgo
+		</div>
+	</div>
+
+	<h4>Events</h4>
+	<p>Events are the most important form of concepts in Video Game Ontology. They are used to describe what has happened during a gameplay session. Events are divided in four subclasses: vgo:GameEvent, vgo:InAppPurchaseEvent, vgo:MenuEvent and vgo:PlayerEvent.</p>
+	<p>The vgo:GameEvent describes the events happening inside a game. A game event can be anything, from killing an enemy, to starting a new level or firing missiles. vgo:GameEvent has two defined subclasses underneath, vgo:GainEvent and vgo:LoseEvent. The purpose of these events is to enable representing of temporality in the ontology. For example, a player might have a health potion for a while, but after consuming it, they no longer posses the item. However, the player has owned the health potion for a while and that information can be valuable especially for game developers. Thus, the video game ontology models temporality with gain and lose events, that are used to describe temporality, without deleting existing ontology links.</p>
+	<p>
+		Purchases made inside a game can be also described with the Video game Ontology by using the vgo:InAppPurchaseEvent class. In free-to-play world of games, players can buy in-game currency, better weapons or speed up the gameplay with real money. This event is used to capture knowledge of any purchase made with real money, thus allowing modelling of purchasing behaviour inside games. 
+	</p>
+	<p>
+		vgo:MenuEvents are used to describe any events that take place in the game menu. These can be muting off the sounds, changing controller settings or changing game difficulty settings.
+	</p>
+	<p>
+		Finally, vgo:PlayerEvent is used to model any events that relate specifically to the player. An example could be showing an advertisement inside a game and the player decision on whether to follow that advertisement to a website or not; tracking what buttons player has pressed, etc.
+	</p>
+	<div id="figure_event" class="figure" style="text-align: center;">
+	<img src="images/event-hierarchy.svg" alt="Event hierarchy" width="500">
+		<div style="text-align: center;">
+		<a href="#figure_event">Figure 3</a>. Event hierarchy
+		</div>
+	</div>
+	
+	<h4>Products and on-line purchases</h4>
+	<p>As mentioned above, the vgo:GameProduct describes anything that is available for purchase in a game. It is a subclass of schema:Product and gr:ProductOrService, in order to describe the product in more detail. The ontology enables developers to extend the Video Game Ontology concepts to be purchasable products whenever needed.</p>
+	
+	<div id="game-product" class="figure" style="text-align: center;">
+	<img src="images/game-product-model.svg" alt="Game product description" width="700">
+		<div style="text-align: center;">
+		<a href="#game-product">Figure 4</a>. Game product description
+		</div>
+	</div>
+							

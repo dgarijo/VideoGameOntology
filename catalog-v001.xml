@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1419011532695" name="http://purl.org/net/GameOntology" uri="GameOntologyv3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1419011532695" name="shadowed:http://purl.org/net/GameOntology" uri="old/GameOntologyv1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1419011532695" name="shadowed:http://purl.org/net/GameOntology" uri="old/GameOntologyv2.owl"/>
+    </group>
+</catalog>

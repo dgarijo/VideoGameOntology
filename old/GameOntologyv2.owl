@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY net "http://purl.org/net/" >
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY resource "http://dbpedia.org/resource/" >
+    <!ENTITY ontology "http://dbpedia.org/ontology/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY v1 "http://purl.org/goodrelations/v1#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY VideoGameOntology "http://purl.org/net/VideoGameOntology#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&net;GameOntology#"
+     xml:base="&net;GameOntology"
+     xmlns:v1="http://purl.org/goodrelations/v1#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:resource="http://dbpedia.org/resource/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:net="http://purl.org/net/"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:VideoGameOntology="&net;VideoGameOntology#">
+    <owl:Ontology rdf:about="&net;VideoGameOntology">
+        <terms:created rdf:datatype="&xsd;date">2013-10-22</terms:created>
+        <dc:creator rdf:datatype="&xsd;anyURI">http://delicias.dia.fi.upm.es/members/DGarijo/#me</dc:creator>
+        <dc:creator rdf:datatype="&xsd;anyURI">http://filip.milstan.net/</dc:creator>
+        <dc:creator rdf:datatype="&xsd;anyURI">http://purl.org/net/mpoveda</dc:creator>
+        <dc:creator rdf:datatype="&xsd;anyURI">http://www.mendeley.com/profiles/janne-parkkila/</dc:creator>
+        <vann:preferredNamespacePrefix>vgo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/net/VideoGameOntology#</vann:preferredNamespaceUri>
+        <terms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</terms:license>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en">An ontology for describing video games and game plays. Created by Janne Parkkila, Filip Radulovic, Daniel Garijo and María Poveda.</rdfs:comment>
+        <dc:title xml:lang="en">The Video Game Ontology</dc:title>
+        <dc:description xml:lang="en">The Video Game Ontology is an ontology designed for describing video games and all the resources related to their game plays.</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="&terms;creator">
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#hasFeature">
+        <rdfs:label>posessesFeature</rdfs:label>
+        <rdfs:comment xml:lang="en">posessesFeature connects item to a feature it can have. An item with connection to potable feature would make the item potable.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Feature"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#hasGameGenre -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#hasGameGenre">
+        <rdfs:label>isGameGenre</rdfs:label>
+        <rdfs:comment xml:lang="en">isGameGenre connects a game to certain genre. This is used to describe what type of game is in question.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#hasLeaderboard -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#hasLeaderboard">
+        <rdfs:label>containsLeaderboard</rdfs:label>
+        <rdfs:comment xml:lang="en">containsLeaderboard connects a game to a leaderboard. A game can have one or more leaderboards that keep track of ranking of the players. For example this could be a ranking of who has the most soccer game wins or who has the fastest lap in formula game.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Leaderboard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#hasPlayingArea -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#hasPlayingArea">
+        <rdfs:label>containsPlayingArea</rdfs:label>
+        <rdfs:comment xml:lang="en">containsPlayingArea connects a game to a particular gaming area in that game. In every game, the gameplay is happening in some playing area and containsPlayingArea is used to describe this relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#PlayingArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isAchievementInGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isAchievementInGame">
+        <rdfs:label>isAchievementInGame</rdfs:label>
+        <rdfs:comment xml:lang="en">isAchievementInGame connects an achievement to a game. This is to map all the achievements one game can have. An achievement should always belong to some game.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isCharacterInGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isCharacterInGame">
+        <rdfs:label>isCharacterInGame</rdfs:label>
+        <rdfs:comment xml:lang="en">isCharacterInGame property describes the relation between a Character and a Game. A character, whether it is a player character or non-player character, always belongs to a game.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Character"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isCharacterInSession -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isCharacterInSession">
+        <rdfs:label>participatesInSession</rdfs:label>
+        <rdfs:comment xml:lang="en">participatesInSession property connects the character to session. A character can participate in a game session, for example one football match or a round of counter-strike. As player can have multiple characters, a character needs to connected to the session, to know which character participated.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Character"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isEventAssociatedToPlayer">
+        <rdfs:label>isAssociatedToPlayer</rdfs:label>
+        <rdfs:comment xml:lang="en">isAssociatedToPlayer connects an InstantenousEvent to a certain player. A player may have caused an event to happen through the actions of his/her character and this connection is used to connect the real person to the event.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isEventInGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isEventInGame">
+        <rdfs:label>happensInGame</rdfs:label>
+        <rdfs:comment xml:lang="en">happensInGame describes the connection between an InstantaneousEvent and a Game. An event always happens inside a specific a game.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isEventInSession -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isEventInSession">
+        <rdfs:label>happensInSession</rdfs:label>
+        <rdfs:comment xml:lang="en">happensInSession connects an InstantaneousEvent to gameplay Session. An event always happens during a certain session, for example during a round of chess.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isFriendWithPlayer -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isFriendWithPlayer">
+        <rdfs:label>isFriendOfPlayer</rdfs:label>
+        <rdfs:comment xml:lang="en">isFriendOfPlayer describes a connection between players. The property is used to model the friends a player has and with whom he might be playing games with.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Player"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;knows"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isItemInGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isItemInGame">
+        <rdfs:label>existsInGame</rdfs:label>
+        <rdfs:comment xml:lang="en">existsInGame connects an item to a game. An item can exist in a game.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isPlayerInSession -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isPlayerInSession">
+        <rdfs:label>playsSession</rdfs:label>
+        <rdfs:comment xml:lang="en">playsSession connects player to a session. This link is used to keep track of actions what a player has done in one gameplay session, for example this can be a one round of Counter-Strike or a level of Mario.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isReceivedInSession -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isReceivedInSession">
+        <rdfs:label>isReceivedInSession</rdfs:label>
+        <rdfs:comment xml:lang="en">isReceivedInSession describes when a certain achievement was received. An achievement is rewarded during a gameplay session and isReceivedInSession allows to connect these two together.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isRelatedToItem -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isRelatedToItem">
+        <rdfs:label>isRelatedToItem</rdfs:label>
+        <rdfs:comment xml:lang="en">isRelatedToItem connects an item to a InstantaneousEvent. This is used to describe an event that includes an item in one way or another. For example, an event where character gains a new sword can be described with this relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isSessionInGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isSessionInGame">
+        <rdfs:label>isSessionInGame</rdfs:label>
+        <rdfs:comment xml:lang="en">isSessionInGame connects a Session to a certain Game. Each gameplay session must belong to a certain game.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#isTriggeredByCharacter -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#isTriggeredByCharacter">
+        <rdfs:label>isTriggeredByCharacter</rdfs:label>
+        <rdfs:comment xml:lang="en">isTriggeredByCharacter connects the InstantaneousEvent to Character. This describes that an event is often caused by a character. The character in question can be either a player character as well as a non-player character. For example, both player and non-player characters can trigger a player death event.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Character"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#livesIn -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#livesIn">
+        <rdfs:label>livesIn</rdfs:label>
+        <rdfs:comment xml:lang="en">livesIn describes the connection between a player and his place of existence in the real-world. A player is connected to dbpediad:PopulatedPlace as that has descriptions for places where people live and contains more detailed information of them, such as continents and regions.</rdfs:comment>
+        <rdfs:range rdf:resource="&ontology;PopulatedPlace"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#ownsAchievement -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#ownsAchievement">
+        <rdfs:label>ownsAchievement</rdfs:label>
+        <rdfs:comment xml:lang="en">ownsAchievement connects the player to the achievements he/she owns.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#ownsCharacter -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#ownsCharacter">
+        <rdfs:label>ownsCharacter</rdfs:label>
+        <rdfs:comment xml:lang="en">ownsCharacter connects player to a character. A player can have multiple characters in one game and this connection is used to define all the different characters a player could be playing. ownsCharacter describes an ownership of the character. Even though a player deletes, trades or loses his/her character in any way, the relationship is still kept. This is to keep the historical knowledge of a Player. In situation where a character should be marked “removed” from the player, use LostEvent class of InstantaneousEvent class.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Character"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#ownsItem -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#ownsItem">
+        <rdfs:label>ownsItem</rdfs:label>
+        <rdfs:comment xml:lang="en">ownsItem connects a character to certain item. A character can own multiple items and this is used to keep track of the character owned items. OwnsItem describes an ownership of an item. Even though a player loses an item, the ownsItem connection is still held with the item. This is to keep track of character history. As a player can play multiple characters, a player should not be connected to an item. In situation where an item should be marked “removed” from the character, use LostEvent class of InstantaneousEvent class.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Character"/>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#playsGame -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#playsGame">
+        <rdfs:label>playsGame</rdfs:label>
+        <rdfs:comment xml:lang="en">playsGame connects the Player to a Game. This allows to tell what games the player is playing.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#purchasesGameOffering -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#purchasesGameOffering">
+        <rdfs:label>purchasesGameOffering</rdfs:label>
+        <rdfs:comment xml:lang="en">purchasesEvent connects an InAppPurhcaseEvent to a GameOffering. This connection describes a purchase event that is caused when a player does an In-App purchase. It also links the purchase to certain GameOffering that has been purchased.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#GameProduct"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InAppPurchaseEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#unlocksAchievement -->
+
+    <owl:ObjectProperty rdf:about="&net;VideoGameOntology#unlocksAchievement">
+        <rdfs:label>unlocksAchievement</rdfs:label>
+        <rdfs:comment xml:lang="en">unlocksAchievement describes the connection between an InstantaneousEvent and an Achievement. Achievement is always unlocked because some event happened. This is a developer-centric approach as a certain event unlocks an achievement, not player. For example, eating the 100th piece of cake unlocks the “Cake Eater” achievement.</rdfs:comment>
+        <rdfs:range rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <owl:ObjectProperty rdf:about="&foaf;knows"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#endTime -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#endTime">
+        <rdfs:label>endTime</rdfs:label>
+        <rdfs:comment xml:lang="en">endTime describes the ending moment in time of a single Session. endTime connects the session to a DateTime value which holds the moment when the session ended.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Session"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#eventTime -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#eventTime">
+        <rdfs:label>eventTime</rdfs:label>
+        <rdfs:comment xml:lang="en">time describes the connection of InstantaneousEvent happening at a certain moment of time. time Conncets the event to a DateTime value that describes the moment when the event happened.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#instantaneousEventName -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#instantaneousEventName">
+        <rdfs:label>instantaneousEventName</rdfs:label>
+        <rdfs:comment xml:lang="en">name connects InstantaneousEvent a text string. This allows the event to have a name to recognize it for.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#releaseDate -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#releaseDate">
+        <rdfs:label>releaseDate</rdfs:label>
+        <rdfs:comment xml:lang="en">releaseDate connects a game to a time which describes the release date of the game.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#startTime -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#startTime">
+        <rdfs:label>startTime</rdfs:label>
+        <rdfs:comment xml:lang="en">startTime describes the starting moment in time of a single Session. startTime connects the session to a DateTime value which holds the moment when the session started.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Session"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#username -->
+
+    <owl:DatatypeProperty rdf:about="&net;VideoGameOntology#username">
+        <rdfs:label>username</rdfs:label>
+        <rdfs:comment xml:lang="en">The username connects player to a text string which describes the username a player has.</rdfs:comment>
+        <rdfs:domain rdf:resource="&net;VideoGameOntology#Player"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/PopulatedPlace -->
+
+    <owl:Class rdf:about="&ontology;PopulatedPlace"/>
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#ProductOrService -->
+
+    <owl:Class rdf:about="&v1;ProductOrService"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Achievement -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Achievement">
+        <rdfs:label>Achievement</rdfs:label>
+        <rdfs:comment xml:lang="en">Achievement is a reward gained in game due to some event done in the game. Achievements are a standard of game industry to reward players with accomplishing tasks in the game. Achievement is a sbuclass of GameOffering, as In some situations an achievement could also be purchased inside a game.
+The subclasses of Achievement are based on the classification done by Markus Montola.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Character -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Character">
+        <rdfs:label>Character</rdfs:label>
+        <rdfs:comment xml:lang="en">A character is any actor that can exists in a game. A character can be either a player controlled one or a non-player character. A character is subclass of GameOffering, because in some games a character can be bought as an in-app purchase.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Collection -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Collection">
+        <rdfs:label>Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Collection is a set of game items. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example of Collection would be obtaining a full set of christmas clothes for a character to wear.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Completion -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Completion">
+        <rdfs:label>Completion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Completion means completing part of a game or an optional sub goal. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example could be to save a princess from a burning tower.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Curiosity -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Curiosity">
+        <rdfs:label>Curiosity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Curiosity class describes funny random things that can happen or be found in the game. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example could be jumping from the Eifel tower without dying.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Fandom -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Fandom">
+        <rdfs:label>Fandom</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Fandom achievement is related to doing some true fan activities. This is a subclass of Achievement, as it can be received as a reward due to player actions This could be purchasing a collectors edition of the game or attending a fan gathering.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Feature -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Feature">
+        <rdfs:label>Feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Feature describes an ability or characteristic. For example, a sword could have “damage dealing” ability and a bottle of water could be “potable”.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GainEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#GainEvent">
+        <rdfs:label>GainEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">GainEvent describes an event that is related to character/player gaining something in a game. This is a subclass of GameEvent as gaining something is related to a game. For example, a player can gain a new character or achievement. Another example would be a character gaining a new item.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Game -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Game">
+        <rdfs:label>Game</rdfs:label>
+        <rdfs:comment xml:lang="en">Game class describes a playable game. A game is any product that can be played by a player. Game is a subclass of GameOffering as games can be bought inside a game. For example, this could be the purchase of a minigame or sequel of the game in question.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GameEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#GameEvent">
+        <rdfs:label>GameEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">GameEvent describes an event that takes place in a game without straight player interaction. GameEvents are often very specific for each game. This is a subclass of InstantaneousEvent because it happens at certain moment in time. Examples of GameEvent could be opening a door, enemy dying, player gaining an achievement etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GameProduct -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#GameProduct">
+        <rdfs:label>GameProduct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&v1;ProductOrService"/>
+        <rdfs:subClassOf rdf:resource="&schema;Product"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&net;VideoGameOntology#Achievement"/>
+                    <rdf:Description rdf:about="&net;VideoGameOntology#Character"/>
+                    <rdf:Description rdf:about="&net;VideoGameOntology#Game"/>
+                    <rdf:Description rdf:about="&net;VideoGameOntology#Item"/>
+                    <rdf:Description rdf:about="&net;VideoGameOntology#PlayingArea"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A GameProduct is anything that can be bought in a game. A game product can be a character, item or even an achievement. 
+GameProduct is a subclass of Good Relations: ProductOrService. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Genre -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Genre">
+        <rdfs:label>Genre</rdfs:label>
+        <rdfs:comment xml:lang="en">Genre class describes the genre a game belongs to. All of the games have at least one genre. Examples of this are RPG, Simulator and Adventure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#HardMode -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#HardMode">
+        <rdfs:label>HardMode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">HardMode achievement describes succeeding in the game on a high difficulty level. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example could be completing Doom on Nightmare difficulty level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#InAppPurchaseEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#InAppPurchaseEvent">
+        <rdfs:label>InAppPurchaseEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">InAppPurchaseEvent describes an event that is related to making a purchase inside a game. This is a subclass of InstantaneousEvent because it happens at certain moment in time.An example of InAppPurchaseEvent would be unlocking secret levels with real money or purchasing Smurf Berries.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#InstantaneousEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#InstantaneousEvent">
+        <rdfs:label>InstantaneousEvent</rdfs:label>
+        <rdfs:comment xml:lang="en">InstantaneousEvent class describes an event that happens at certain moment in time. This can be a player gaining an achievement, killing an enemy or making an in-app purchase.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Item -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Item">
+        <rdfs:label>Item</rdfs:label>
+        <rdfs:comment xml:lang="en">An item is something that can be used or just displayed in a game. These can be for example potion, sword or a car. Item is a subclass of GameOffering, because they can often be bought inside a game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Leaderboard -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Leaderboard">
+        <rdfs:label>Leaderboard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment xml:lang="en">Leaderboard class describes a ranking system of the players. There can be multiple rankings in a game, for example this can be the kill-count ranking of Modern Warfare or best time listing of Formula 1 game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#LoseEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#LoseEvent">
+        <rdfs:label>LoseEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">LoseEvent describes an event that is related to character/player losing something in a game. This is a subclass of GameEvent as gaining something is related to a game. For example, a player can lose a character due to trade with another player. Another example would be a character losing item due to consuming it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Loyalty -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Loyalty">
+        <rdfs:label>Loyalty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Loaylty achievement is used to give recognition to loyal players. This is a subclass of Achievement, as it can be received as a reward due to player actions. For example, this could be an achievement received after subscribing to the game for a year.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Luck -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Luck">
+        <rdfs:label>Luck</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Luck describes an achievement that is awarded to the player in a lucky situation. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example of Lucky Achievement would be winning a lottery or throwing “Yahtzee” without re-rolling the dice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#MenuEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#MenuEvent">
+        <rdfs:label>MenuEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">MenuEvent describes an event that is related to interacting with the ingame menu. This is a subclass of InstantaneousEvent because it happens at certain moment in time. These can be for example muting sounds, changing graphics or remapping controls.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Minigame -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Minigame">
+        <rdfs:label>Minigame</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">MiniGames achievement describes success in mini-games. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example could be to complete all the Pizza deliveries in GTA minigame.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Multiplayer -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Multiplayer">
+        <rdfs:label>Multiplayer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Multiplayer achievement describes anything that can be awarded to one or multiple players due to their gameplay in multiplayer. This is a subclass of Achievement, as it can be received as a reward due to player actions. For example, this could be winning 10 Team Fortress matches in a row with the same team.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Paragon -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Paragon">
+        <rdfs:label>Paragon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Paragon is a rare achievement given only to limited number of players. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example of paragon achievement could be the first player to finnish a game under 10 hours or the first player to complete the game 100% through.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Player -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Player">
+        <rdfs:label>Player</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
+        <rdfs:comment xml:lang="en">Players describes the living and breathing person who is playing games. Player class is used to keep a profile of a certain person and to connect all the games, achievements and characters he/she has. The Player is a subclass of foaf:Agent as it contains all relative information of a person, organization or even an artificial agent..</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#PlayerEvent -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#PlayerEvent">
+        <rdfs:label>PlayerEvent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">PlayerEvent describes an InstantaneousEvent that can be caused by a Player. This is a subclass of InstantaneousEvent because it happens at certain moment in time. This can be for example jumping in the game, throwing an item or pressing a joystick button.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#PlayingArea -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#PlayingArea">
+        <rdfs:label>PlayingArea</rdfs:label>
+        <rdfs:comment xml:lang="en">PlayingArea is the description of a place where the gameplay takes place. All of the games have somekind of area where they are played in. It can be a race track from a racing game or star system of EVE Online.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Session -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Session">
+        <rdfs:label>Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment xml:lang="en">Session class describes a session of gameplay. A session can be a single round of chess, a round of counter-strike, one half-time of soccer or one race of formula 1. Session class is used to store gameplay information, especially for analytical reasons.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#SpecialPlayStyle -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#SpecialPlayStyle">
+        <rdfs:label>SpecialPlayStyle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">SpecialPlayStyle Achievement is awarded to players after playing a game in special fashion. Often this is something harder than the regular play and requires more player experience to excel in it. This is a subclass of Achievement, as it can be received as a reward due to player actions. An example of SpecialPlayStyle could be to complete a game without violence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Tutorial -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Tutorial">
+        <rdfs:label>Tutorial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Tutorial achievement is a type of achievement that is awarded to player for trying out various features of the game. This is a subclass of Achievement, as it can be received as a reward due to player actions. This can be testing out special equipment or just playing through the in-game tutorial in the beginning.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Veteran -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Veteran">
+        <rdfs:label>Veteran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Veteran achievement is an award that is given for accumulating a lot of play hours or game actions. This is a subclass of Achievement, as it can be received as a reward due to player actions. For example, this could be playing thousand hours of World of Tanks or making 100 goals in ice hockey game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Virtuosity -->
+
+    <owl:Class rdf:about="&net;VideoGameOntology#Virtuosity">
+        <rdfs:label>Virtuosity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&net;VideoGameOntology#Achievement"/>
+        <rdfs:comment xml:lang="en">Virtuosity achievement describes an achievement that is awarded for playing masterfully in the game. This is a subclass of Achievement, as it can be received as a reward due to player actions. Examples of Virtuous play could be finishing the game without saving at all, dying 0 games or completing the game under 4 hours.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Product -->
+
+    <owl:Class rdf:about="&schema;Product"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

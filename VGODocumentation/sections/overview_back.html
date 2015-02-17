@@ -1,0 +1,294 @@
+<h2>2. Video Game Ontology Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>This page gives an overview of the concepts in Video Game Ontology. The main concepts are explained here as well as the link to the ontology entry in the actual Video Game Ontology.</p>
+<h4>Classes</h4>
+<ul class="hlist">
+      <li>
+         <a href="#Achievement"
+            title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <p>The vgo:Achievement is a reward gained in a game due to some event accomplished in the game. Achievements are commonly used in game industry to reward players for having accomplished tasks in the game. This ontology defines various subclasses of vgo:Achievement, which are all based on the classification presented by <a href="http://dl.acm.org/citation.cfm?id=1621859">Markus Montola et al.</a></p>
+      </li>
+      <li>
+         <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+         <p>The vgo:Collection type of achievement is typically rewarded from collecting an amount of certain items in a game. An example of vgo:Collection would be obtaining a full set of christmas clothes for a character to wear or collecting every possible flower in the game. </p>
+      </li>
+      <li>
+         <a href="#Collection" title="http://purl.org/net/VideoGameOntology#Collection">Collection</a>
+         <p>The vgo:Collection type of achievement is typically rewarded from collecting an amount of certain items in a game. An example of vgo:Collection would be obtaining a full set of christmas clothes for a character to wear or collecting every possible flower in the game. </p>
+      </li>
+      <li>
+         <a href="#Completion" title="http://purl.org/net/VideoGameOntology#Completion">Completion</a>
+         <p>The vgo:Completion type of achievement is usually rewarded from successfully completing a certain goal or subgoal in a game. An example of vgo:Completion would be to save a princess from a burning tower or completing all side-quests in a game.</p>
+      </li>
+      <li>
+         <a href="#Curiosity" title="http://purl.org/net/VideoGameOntology#Curiosity">Curiosity</a>
+         <p>The vgo:Curiosity describes funny random things that can happen or be found in the game. An example could be jumping from the Eiffel tower without dying or following a comupter controlled character’s activities for one hour.</p>
+      </li>
+      <li>
+         <a href="#Fandom" title="http://purl.org/net/VideoGameOntology#Fandom">Fandom</a>
+         <p>The vgo:Fandom achievement is related to doing some true fan activities. An example of vgo:Fandom could be purchasing a collectors edition of the game or attending a fan gathering.</p>
+      </li>
+      <li>
+         <a href="#Feature" title="http://purl.org/net/VideoGameOntology#Feature">Feature</a>
+         <p>vgo:Feature describes an ability or characteristic. For example, a sword could have “damage dealing” ability and a bottle of water could be “potable”.</p>
+      </li>
+      <li>
+         <a href="#GainEvent" title="http://purl.org/net/VideoGameOntology#GainEvent">Gain event</a>
+         <p>The vgo:GainEvent describes an event that is related to character/player gaining something in a game. This is a subclass of vgo:GameEvent as gaining something is related to a specific game. For example, a player can gain a new character, achievement or item. </p>
+      </li>
+      <li>
+         <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+         <p>The vgo:Game class describes a game product that can be played by a player.
+            Examples of games are Pong, Grand Theft Auto, Pokemon and Need for Speed.</p>
+      </li>
+      <li>
+         <a href="#GameEvent" title="http://purl.org/net/VideoGameOntology#GameEvent">Game event</a>
+         <p>The vgo:GameEvent describes an event that takes place in a game without straight player interaction. GameEvents are often very specific for each game. Examples of vgo:GameEvent could be an enemy dying, connecting to a multiplayer server, loading a new level or playing an animation.</p>
+      </li>
+      <li>
+         <a href="#GameProduct"
+            title="http://purl.org/net/VideoGameOntology#GameProduct">Game Product</a>
+            <p>The vgo:purchasesGameOffering property aseerts a vgo:InAppPurchaseEvent to a specific vgo:GameProduct. This property describes what is purchased by the in-app purchase event that the player has done. </p>
+      </li>
+      <li>
+         <a href="#Genre" title="http://purl.org/net/VideoGameOntology#Genre">Genre</a>
+         <p>The vgo:Genre class describes the genre a game belongs to. All of the games have at least one genre. Examples of this are RPG, Simulator and Adventure</p>
+      </li>
+      <li>
+         <a href="#HardMode" title="http://purl.org/net/VideoGameOntology#HardMode">Hard mode</a>
+         <p>The vgo:HardMode achievement describes succeeding in a game on a high difficulty level. An example could be completing the “Doom” game on Nightmare difficulty level.</p>
+      </li>
+      <li>
+         <a href="#InAppPurchaseEvent"
+            title="http://purl.org/net/VideoGameOntology#InAppPurchaseEvent">In-app purchase event</a>
+            <p>The vgo:InAppPurchaseEvent describes an event that is related to making a purchase with real money inside a game. This is a subclass of InstantaneousEvent because it happens at certain moment in time. An example of vgo:InAppPurchaseEvent would be unlocking secret levels with real money or purchasing better equipment with real money.</p>
+      </li>
+      <li>
+         <a href="#InstantaneousEvent"
+            title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+            <p>The vgo:InstantaneousEvent class describes an event that happens during the gameplay at a certain moment in time. This can be a player gaining an achievement, killing an enemy or making an in-app purchase.</p>
+      </li>
+      <li>
+         <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+         <p>A vgo:Item portrays any item that exists in a game. The item can either be just visual part of the game or a concrete usable item. As an example an item could be a drinkable potion, a magical sword or just a flower pot. </p>
+      </li>
+      <li>
+         <a href="#Leaderboard"
+            title="http://purl.org/net/VideoGameOntology#Leaderboard">Leaderboard</a>
+            <p>The vgo:Leaderboard class describes a ranking system of the players. There can be multiple rankings in a game, for example, the kill-count ranking of Modern Warfare or the best time listing of Formula 1 game.</p>
+      </li>
+      <li>
+         <a href="#LoseEvent" title="http://purl.org/net/VideoGameOntology#LoseEvent">Lose event</a>
+         <p>vgo:LoseEvent describes an event that is related to character/player losing something in a game. This is a subclass of GameEvent as gaining something is related to a specific game. For example, a player can lose a character due to trade with another player. Another example would be a character losing item due to consuming it.</p>
+      </li>
+      <li>
+         <a href="#Loyalty" title="http://purl.org/net/VideoGameOntology#Loyalty">Loyalty</a>
+         <p>The vgo:Loyalty achievement is used to give recognition to loyal players. For example, this could be an achievement received after subscribing to the game for a year. </p>
+      </li>
+      <li>
+         <a href="#Luck" title="http://purl.org/net/VideoGameOntology#Luck">Luck</a>
+         <p>The vgo:Lucky describes an achievement that is awarded to the player in a lucky situation. An example of vgo:Lucky achievement would be winning in a lottery or throwing “Yahtzee” without re-rolling the dice.</p>
+      </li>
+      <li>
+         <a href="#MenuEvent" title="http://purl.org/net/VideoGameOntology#MenuEvent">Menu event</a>
+         <p>The vgo:MenuEvent describes an event that is related to interacting with the ingame menu. An example of menu event is muting sounds, changing graphic settings, changing gameplay difficulty or remapping game controls.</p>
+      </li>
+      <li>
+         <a href="#Minigame" title="http://purl.org/net/VideoGameOntology#Minigame">Minigame</a>
+         <p>The vgo:Minigame achievement describes success in mini-games that have been included in a certain game but are not vital for completing the game. An example could be to complete all the Pizza deliveries in GTA minigame or gaining over 100 dollars while playing poker in Red Dead Redemption.</p>
+      </li>
+      <li>
+         <a href="#Multiplayer"
+            title="http://purl.org/net/VideoGameOntology#Multiplayer">Multiplayer</a>
+            <p>The vgo:Multiplayer achievement describes anything that can be awarded to one or multiple players due to their gameplay in multiplayer. For example, this could be winning 10 Team Fortress matches in a row with the same team or getting killed ten times in a row in Counter-Strike.</p>
+      </li>
+      <li>
+         <a href="#Paragon" title="http://purl.org/net/VideoGameOntology#Paragon">Paragon</a>
+         <p>The vgo:Paragon is a rare achievement that is given only to limited number of players. An example of vgo:Paragon achievement could be the first player to finish a game under 10 hours or the first ten players to complete the game 100% through.</p>
+      </li>
+      <li>
+         <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+         <p>The vgo:Player describes the entity playing the game. This can be either a human or a computer. vgo:Player class is used to keep a profile of a certain playing entity and to connect all the games, achievements and characters he/she has. The vgo:Player is a subclass of foaf:Person as it contains all relative information of a certain person.</p>
+      </li>
+      <li>
+         <a href="#PlayerEvent"
+            title="http://purl.org/net/VideoGameOntology#PlayerEvent">Player event</a>
+            <p>The vgo:PlayerEvent describes a vgo:InstantaneousEvent that is caused by the player. For example jumping in the game, throwing an item or pressing a joystick button. </p>
+      </li>
+      <li>
+         <a href="#PlayingArea"
+            title="http://purl.org/net/VideoGameOntology#PlayingArea">Playing area</a>
+            <p>The vgo:PlayingArea is the description of a place where the gameplay takes place. All of the games have some kind of area where they are played in. An example of playing areas could be football field in soccer game, a race track from a racing game or a star system of EVE Online.</p>
+      </li>
+      <li>
+         <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+         <p>The vgo:Session class describes a session of gameplay. A session can be a single round of chess, a round of Counter-Strike, one half-time of soccer or one race of Formula 1. vgo:Session class can be used to store gameplay information, especially for analytical reasons.</p>
+      </li>
+      <li>
+         <a href="#SpecialPlayStyle"
+            title="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">Special play style</a>
+            <p>The vgo:SpecialPlayStyle achievement is awarded to players after playing a game in special fashion. Often this is something harder than the regular play and requires more player experience to excel in it. An example of vgo:SpecialPlayStyle could be to complete a game without any violence or against a timer.</p>
+      </li>
+      <li>
+         <a href="#Tutorial" title="http://purl.org/net/VideoGameOntology#Tutorial">Tutorial</a>
+         <p>The vgo:Tutorial achievement is  awarded to a player for trying out various features of the game. This is often related to learning how to play the game, how the controls work and how the game logic works. An example of vgo:Tutorial could be testing out newly gained special equipment or just playing through the in-game tutorial in the beginning.</p>
+      </li>
+      <li>
+         <a href="#Veteran" title="http://purl.org/net/VideoGameOntology#Veteran">Veteran</a>
+         <p>The vgo:Veteran achievement is an award that is given for accumulating a lot of play hours or game actions. For example, vgo:Veteran could be playing thousand hours of World of Tanks or making 100 goals in ice hockey game.</p>
+      </li>
+      <li>
+         <a href="#Virtuosity" title="http://purl.org/net/VideoGameOntology#Virtuosity">Virtuosity</a>
+         <p>The vgo:Virtuosity describes an achievement that is awarded for playing masterfully in the game. Examples of virtuous play could be finishing the game without saving at all, dying zero times or preventing an opposing team from scoring any goals in a soccer game.</p>
+      </li>
+   </ul><h4>Properties</h4><ul class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasFeature" title="http://purl.org/net/VideoGameOntology#hasFeature">has feature</a>
+      <p>The vgo:hasFeature property indicates what is a vgo:Feature (or ability) of a particular vgo:Item. For example, a fire sword, a healing staff or boots of flight connects item to a feature it can have. An item with connection to potable feature would make the item potable. </p>
+   </li>
+   <li>
+      <a href="#hasGameGenre"
+         title="http://purl.org/net/VideoGameOntology#hasGameGenre">has game genre</a>
+         <p>The vgo:hasGameGenre property specifies that a game belongs to a certain game genre. For example, Pong would be an arcade game and Mario a platformer.</p>
+   </li>
+   <li>
+      <a href="#hasLeaderboard"
+         title="http://purl.org/net/VideoGameOntology#hasLeaderboard">has leaderboard</a>
+         <p>The vgo:hasLeaderboard specifies that a leaderboard belongs to a particular game. A game can have one or more leaderboards that keep track of ranking of the players. For example a leaderboard could be ranking of who has the most soccer game victories or who has the fastest lap in a Formula 1 game.</p>
+   </li>
+   <li>
+      <a href="#hasPlayingArea"
+         title="http://purl.org/net/VideoGameOntology#hasPlayingArea">has playing area</a>
+         <p>The vgo:hasPlayingArea property asserts a gaming area to a specific game. In every game, the gameplay takes place in some playing area. </p>
+   </li>
+   <li>
+      <a href="#isAchievedInSession"
+         title="http://purl.org/net/VideoGameOntology#isAchievedInSession">is achieved in session</a>
+         <p>The property vgo:isAchievedInSession asserts the receiving of an achievement to a certain gameplay session. This enables to keep track of what achievements a player has gained during one gameplay session. </p>
+   </li>
+   <li>
+      <a href="#isAchievementInGame"
+         title="http://purl.org/net/VideoGameOntology#isAchievementInGame">is achievement in game</a>
+         <p>Optional</p>
+         <p>The vgo:hasAchievement property specifies that a game has a specific achievement. A game often contains more than one achievement that can be awarded to the players.</p>
+   </li>
+   <li>
+      <a href="#isCharacterInGame"
+         title="http://purl.org/net/VideoGameOntology#isCharacterInGame">is character in game</a>
+         <p>vgo:isCharacterInGame property describes the relation between a vgo:Character and a vgo:Game. a vgo:Character always belongs to a certain game.</p>
+   </li>
+   <li>
+      <a href="#isCharacterInSession"
+         title="http://purl.org/net/VideoGameOntology#isCharacterInSession">is character in session</a>
+         <p>The vgo:isCharacterInSession property connects the vgo:Character to a vgo:Session. A character participates in a game session (e.g., a football match or a counter strike round) during a period of time. As players can have multiple characters, a character needs to be connected to the session, in order to know which of those characters participated in the certain session. 
+</p>
+   </li>
+   <li>
+      <a href="#isEventAssociatedToPlayer"
+         title="http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer">is event associated to player</a>
+         <p>The vgo:isEventAssociatedToPlayer property asserts an event to a specific vgo:Player. A player may have caused an event to happen through the actions of his/her character and this property is used to connect the real person to the event. </p>
+   </li>
+   <li>
+      <a href="#isEventInGame"
+         title="http://purl.org/net/VideoGameOntology#isEventInGame">is event in game</a>
+         <p>The vgo:isEventInGame property asserts an event to a specific game. An event always happens inside a specific a game.</p>
+   </li>
+   <li>
+      <a href="#isEventInSession"
+         title="http://purl.org/net/VideoGameOntology#isEventInSession">is event in session</a>
+         <p>The vgo:isEventInSession property links an event to a specific gameplay session. An event always happens during a certain session and this property enables to link the events to that session. For example, an event of moving the queen in game of chess should be connected to a session of chess.</p>
+   </li>
+   <li>
+      <a href="#isEventRelatedToItem"
+         title="http://purl.org/net/VideoGameOntology#isEventRelatedToItem">is event related to item</a>
+         <p>The vgo:isEventRelatedToItem property asserts an event to a specific item. This property is used to describe an event that includes an item in one way or another. For example, an event where character gains a new sword can be described with this relation. </p>
+   </li>
+   <li>
+      <a href="#isEventTriggeredByCharacter"
+         title="http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter">is event triggered by character</a>
+         <p>The vgo:isEventTriggeredByCharacter connects the vgo:InstantaneousEvent to specific vgo:Character. This describes that an event is often caused by a character. The character in question can be either a character controlled by a player or a computer. For example, both player and non-player characters can trigger a character death event.</p>
+   </li>
+   <li>
+      <a href="#isFriendWithPlayer"
+         title="http://purl.org/net/VideoGameOntology#isFriendWithPlayer">is friend with player</a>
+         <p>The vgo:isFriendWithPlayer describes a connection between players. The property is used to model the friends a player has and with whom he might be playing games with. The friends of a player are not bound necessarily to particular game, but can be describe the friendly playing relationship in overall.</p>
+   </li>
+   <li>
+      <a href="#isItemInGame"
+         title="http://purl.org/net/VideoGameOntology#isItemInGame">is item in game</a>
+         <p>The vgo:isItemInGame is used to specify which item belongs to a particular game. An item cannot exist alone and thus should always be associated to a certain game. </p>
+   </li>
+   <li>
+      <a href="#isPlayerInSession"
+         title="http://purl.org/net/VideoGameOntology#isPlayerInSession">is player in session</a>
+         <p>The vgo:isPlayerInSession property connects vgo:Player to a specific vgo:Session. This property is used to keep track of the gameplay sessions the player has played and what has happened in those sessions. For example vgo:Player may have participated in a this can be a one round of Counter-Strike or played one hour session of mario.</p>
+   </li>
+   <li>
+      <a href="#isSessionInGame"
+         title="http://purl.org/net/VideoGameOntology#isSessionInGame">is session in game</a>
+         <p>The vgo:isSessionInGame property links a vgo:Session to a certain vgo:Game. Each gameplay session must belong to a certain game.</p>
+   </li>
+   <li>
+      <a href="#livesIn" title="http://purl.org/net/VideoGameOntology#livesIn">lives in</a>
+      <p>The vgo:livesIn describes the connection between a player and his place of existence in the real-world. A vgo:Player is connected to wgs84:SpatialThing as that has descriptions for places where people live and contains more detailed information of them, such as continents and regions.</p>
+   </li>
+   <li>
+      <a href="#ownsAchievement"
+         title="http://purl.org/net/VideoGameOntology#ownsAchievement">owns achievement</a>
+         <p>The vgo:ownsAchievement links the vgo:Player to the particular vgo:Achievement earned in a game.</p>
+   </li>
+   <li>
+      <a href="#ownsCharacter"
+         title="http://purl.org/net/VideoGameOntology#ownsCharacter">owns character</a>
+         <p>The vgo:ownsCharacter property asserts which characters are owned by a specific player. A player can have multiple characters in one game and this connection is used to define all the different characters a player could be playing. Even though a player deletes, trades or loses his/her character in any way, the connection can be kept to contain the player’s history of owned characters.</p>
+   </li>
+   <li>
+      <a href="#ownsItem" title="http://purl.org/net/VideoGameOntology#ownsItem">owns item</a>
+      <p>The vgo:ownsItem describes ownership of an item. A vgo:Item is always owned by a certain vgo:Character. A vgo:Character can own multiple vgo:Items and this relationship is used to keep track of the character’s owned items. Even though players may lose items, the vgo:ownsItem connection is still held with the item. This approach allows to keep track of character’s history of owned items. </p>
+   </li>
+   <li>
+      <a href="#playsGame" title="http://purl.org/net/VideoGameOntology#playsGame">plays game</a>
+      <p>the vgo:playsGame property asserts which games has the vgo:Player played at any point of time.</p>
+   </li>
+   <li>
+      <a href="#purchasesGameOffering"
+         title="http://purl.org/net/VideoGameOntology#purchasesGameOffering">purchases game offering</a>
+         <p>The vgo:purchasesGameOffering property aseerts a vgo:InAppPurchaseEvent to a specific vgo:GameProduct. This property describes what is purchased by the in-app purchase event that the player has done. </p>
+   </li>
+   <li>
+      <a href="#unlocksAchievement"
+         title="http://purl.org/net/VideoGameOntology#unlocksAchievement">unlocks achievement</a>
+         <p>The vgo:unlocksAchievement property asserts an event to a certain achievement. An achievement is always unlocked as a consequence of some event. For example, eating the 100th piece of cake unlocks the “Cake Eater” achievement.</p>
+   </li>
+</ul><h4>Data Properties</h4>
+<ul class="hlist">
+      <li>
+         <a href="#endTime" title="http://purl.org/net/VideoGameOntology#endTime">end Time</a>
+         <p>The vgo:endTime describes the ending moment in time of a single vgo:Session. vgo:endTime connects the session to a DateTime value which holds the moment when the session ended.</p>
+      </li>
+      <li>
+         <a href="#eventTime" title="http://purl.org/net/VideoGameOntology#eventTime">event Time</a>
+         <p>A moment in time when vgo:InstantaneousEvent has occurred.</p>
+      </li>
+      <li>
+         <a href="#eventName" title="http://purl.org/net/VideoGameOntology#eventName">event Name</a>
+         <p>A name of the evevent in question</p>
+      </li>
+      <li>
+         <a href="#releaseDate"
+            title="http://purl.org/net/VideoGameOntology#releaseDate">release Date</a>
+            <p>The vgo:releaseDate specifies the time when a game was released to the public.</p>
+      </li>
+      <li>
+         <a href="#startTime" title="http://purl.org/net/VideoGameOntology#startTime">start Time</a>
+         <p>The vgo:startTime property describes the starting moment in time of a single Session. vgo:startTime connects the session to a DateTime value which holds the moment when the session started.</p>
+      </li>
+      <li>
+         <a href="#username" title="http://purl.org/net/VideoGameOntology#username">username</a>
+         <p>The vgo:username describes the username a player has.</p>
+      </li>
+   </ul>

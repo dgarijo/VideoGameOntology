@@ -1,0 +1,2677 @@
+<h2>4. Cross reference for the Video Game Ontology classes and properties</h2>
+This section provides details for each class and property defined by the Video Game Ontology.
+<div id="classes">
+   <h2>Classes</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Achievement"
+            title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+      </li>
+      <li>
+         <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+      </li>
+      <li>
+         <a href="#Collection" title="http://purl.org/net/VideoGameOntology#Collection">Collection</a>
+      </li>
+      <li>
+         <a href="#Completion" title="http://purl.org/net/VideoGameOntology#Completion">Completion</a>
+      </li>
+      <li>
+         <a href="#Curiosity" title="http://purl.org/net/VideoGameOntology#Curiosity">Curiosity</a>
+      </li>
+      <li>
+         <a href="#Fandom" title="http://purl.org/net/VideoGameOntology#Fandom">Fandom</a>
+      </li>
+      <li>
+         <a href="#Feature" title="http://purl.org/net/VideoGameOntology#Feature">Feature</a>
+      </li>
+      <li>
+         <a href="#GainEvent" title="http://purl.org/net/VideoGameOntology#GainEvent">Gain event</a>
+      </li>
+      <li>
+         <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+      </li>
+      <li>
+         <a href="#GameEvent" title="http://purl.org/net/VideoGameOntology#GameEvent">Game event</a>
+      </li>
+      <li>
+         <a href="#GameProduct"
+            title="http://purl.org/net/VideoGameOntology#GameProduct">Game Product</a>
+      </li>
+      <li>
+         <a href="#Genre" title="http://purl.org/net/VideoGameOntology#Genre">Genre</a>
+      </li>
+      <li>
+         <a href="#HardMode" title="http://purl.org/net/VideoGameOntology#HardMode">Hard mode</a>
+      </li>
+      <li>
+         <a href="#InAppPurchaseEvent"
+            title="http://purl.org/net/VideoGameOntology#InAppPurchaseEvent">In-app purchase event</a>
+      </li>
+      <li>
+         <a href="#InstantaneousEvent"
+            title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+      </li>
+      <li>
+         <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+      </li>
+      <li>
+         <a href="#Leaderboard"
+            title="http://purl.org/net/VideoGameOntology#Leaderboard">Leaderboard</a>
+      </li>
+      <li>
+         <a href="#LoseEvent" title="http://purl.org/net/VideoGameOntology#LoseEvent">Lose event</a>
+      </li>
+      <li>
+         <a href="#Loyalty" title="http://purl.org/net/VideoGameOntology#Loyalty">Loyalty</a>
+      </li>
+      <li>
+         <a href="#Luck" title="http://purl.org/net/VideoGameOntology#Luck">Luck</a>
+      </li>
+      <li>
+         <a href="#MenuEvent" title="http://purl.org/net/VideoGameOntology#MenuEvent">Menu event</a>
+      </li>
+      <li>
+         <a href="#Minigame" title="http://purl.org/net/VideoGameOntology#Minigame">Minigame</a>
+      </li>
+      <li>
+         <a href="#Multiplayer"
+            title="http://purl.org/net/VideoGameOntology#Multiplayer">Multiplayer</a>
+      </li>
+      <li>
+         <a href="#Paragon" title="http://purl.org/net/VideoGameOntology#Paragon">Paragon</a>
+      </li>
+      <li>
+         <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+      </li>
+      <li>
+         <a href="#PlayerEvent"
+            title="http://purl.org/net/VideoGameOntology#PlayerEvent">Player event</a>
+      </li>
+      <li>
+         <a href="#PlayingArea"
+            title="http://purl.org/net/VideoGameOntology#PlayingArea">Playing area</a>
+      </li>
+      <li>
+         <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+      </li>
+      <li>
+         <a href="#SpecialPlayStyle"
+            title="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">Special play style</a>
+      </li>
+      <li>
+         <a href="#Tutorial" title="http://purl.org/net/VideoGameOntology#Tutorial">Tutorial</a>
+      </li>
+      <li>
+         <a href="#Veteran" title="http://purl.org/net/VideoGameOntology#Veteran">Veteran</a>
+      </li>
+      <li>
+         <a href="#Virtuosity" title="http://purl.org/net/VideoGameOntology#Virtuosity">Virtuosity</a>
+      </li>
+   </ul>
+   <div class="entity" id="Achievement">
+      <h3>Achievement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Achievement</p>
+      <div class="comment">
+         <p>The vgo:Achievement is a reward gained in a game due to some event accomplished in the game. Achievements are commonly used in game industry to reward players for having accomplished tasks in the game. </p>
+         <p>This ontology defines various subclasses of vgo:Achievement, which are all based on the classification presented by <a href="http://dl.acm.org/citation.cfm?id=1621859">Markus Montola et al</a>. </p>
+         <p>
+         Example:
+         <pre>            
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &lt;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/MyAchievement&gt;
+                  a vgo:Achievement;
+                  rdfs:comment "My achievement from an example game".
+         </pre>
+      </p>
+      </div>
+
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Collection" title="http://purl.org/net/VideoGameOntology#Collection">Collection</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Completion" title="http://purl.org/net/VideoGameOntology#Completion">Completion</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Curiosity" title="http://purl.org/net/VideoGameOntology#Curiosity">Curiosity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fandom" title="http://purl.org/net/VideoGameOntology#Fandom">Fandom</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Loyalty" title="http://purl.org/net/VideoGameOntology#Loyalty">Loyalty</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Luck" title="http://purl.org/net/VideoGameOntology#Luck">Luck</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Minigame" title="http://purl.org/net/VideoGameOntology#Minigame">Minigame</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Multiplayer"
+               title="http://purl.org/net/VideoGameOntology#Multiplayer">Multiplayer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Paragon" title="http://purl.org/net/VideoGameOntology#Paragon">Paragon</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tutorial" title="http://purl.org/net/VideoGameOntology#Tutorial">Tutorial</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Veteran" title="http://purl.org/net/VideoGameOntology#Veteran">Veteran</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Virtuosity" title="http://purl.org/net/VideoGameOntology#Virtuosity">Virtuosity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HardMode" title="http://purl.org/net/VideoGameOntology#HardMode">Hard mode</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpecialPlayStyle"
+               title="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">Special play style</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isAchievedInSession"
+               title="http://purl.org/net/VideoGameOntology#isAchievedInSession">is achieved in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAchievementInGame"
+               title="http://purl.org/net/VideoGameOntology#isAchievementInGame">is achievement in game</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#ownsAchievement"
+               title="http://purl.org/net/VideoGameOntology#ownsAchievement">owns achievement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#unlocksAchievement"
+               title="http://purl.org/net/VideoGameOntology#unlocksAchievement">unlocks achievement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Character">
+      <h3>Character<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Character</p>
+      <div class="comment">
+         <p>A vgo:Character is any actor that can exists in a game. A character  can be a human-like creature as seen traditionally in video games. However, a character could also be a car, a paddle in game of Pong or spaceship of a space shooter game. This is often contextually related to the gameplay of a certain game. A character can be either controller by a player or by a computer.</p>
+         <p>
+         Example:
+         <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &lt;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/MyCharacter&gt;
+                 a vgo:Character;
+                 rdfs:comment "This is MyCharacter".
+         </pre>
+      </p>
+      </div>
+
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isCharacterInGame"
+               title="http://purl.org/net/VideoGameOntology#isCharacterInGame">is character in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCharacterInSession"
+               title="http://purl.org/net/VideoGameOntology#isCharacterInSession">is character in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsItem" title="http://purl.org/net/VideoGameOntology#ownsItem">owns item</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEventTriggeredByCharacter"
+               title="http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter">is event triggered by character</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsCharacter"
+               title="http://purl.org/net/VideoGameOntology#ownsCharacter">owns character</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Collection">
+      <h3>Collection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Collection</p>
+      <div class="comment">
+         <p>The vgo:Collection type of achievement is typically rewarded from collecting an amount of certain items in a game. An example of vgo:Collection would be obtaining a full set of christmas clothes for a character to wear or collecting every possible flower in the game.</p>
+       <p>     Example:
+         <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &lt;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:Collection;
+                 rdfs:comment "An achievement gained from collecting 1000 coins in the game".
+         </pre>
+      </p>
+      </div>
+
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Completion">
+      <h3>Completion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Completion</p>
+      <div class="comment">
+         <p>The vgo:Completion type of achievement is usually rewarded from successfully completing a certain goal or subgoal in a game. An example of vgo:Completion would be to save a princess from a burning tower or completing all side-quests in a game.</p>
+      <p>
+         <pre>
+            For Example, see section <a href="#Collection">Collection</a>
+         </pre>
+      </p>  
+      </div>
+
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Curiosity">
+      <h3>Curiosity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Curiosity</p>
+      <div class="comment">
+         <p>The vgo:Curiosity describes funny random things that can happen or be found in the game. An example could be jumping from the Eiffel tower without dying or following a comupter controlled characterâ€™s activities for one hour.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p>  
+      </div>
+
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Fandom">
+      <h3>Fandom<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Fandom</p>
+      <div class="comment">
+         <p>The vgo:Fandom achievement is related to doing some true fan activities. An example of vgo:Fandom could be purchasing a collectors edition of the game or attending a fan gathering.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Feature">
+      <h3>Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Feature</p>
+      <div class="comment">
+         <p>vgo:Feature describes an ability or characteristic. For example, a sword could have a "damage dealing" ability and a bottle of water could be "potable".</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/damageFeature&gt;
+                  a vgo:Feature;
+                  rdfs:comment "A damage-dealing feature, that anything that causes damage can have."
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFeature" title="http://purl.org/net/VideoGameOntology#hasFeature">has feature</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GainEvent">
+      <h3>Gain event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#GainEvent</p>
+      <div class="comment">
+         <p>The vgo:GainEvent describes an event that is related to character/player gaining something in a game. This is a subclass of vgo:GameEvent as gaining something is related to a specific game. For example, a player can gain a new character, achievement or item.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/gainSwordEvent&gt;
+                  a vgo:GainEvent;
+                  rdfs:comment "An event for gaining a sword in the game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#GameEvent" title="http://purl.org/net/VideoGameOntology#GameEvent">Game event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Game">
+      <h3>Game<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Game</p>
+      <div class="comment">
+         <p>The vgo:Game class describes a Game Product that can be played by a player.</p>
+         <p>Examples of games are Pong, Grand Theft Auto, Pokemon and Need for Speed.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Pong&gt;
+                  a vgo:Game;
+                  rdfs:comment "Pong is a famous arcade game by Atari.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasGameGenre"
+               title="http://purl.org/net/VideoGameOntology#hasGameGenre">has game genre</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLeaderboard"
+               title="http://purl.org/net/VideoGameOntology#hasLeaderboard">has leaderboard</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPlayingArea"
+               title="http://purl.org/net/VideoGameOntology#hasPlayingArea">has Playing area</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#releaseDate"
+               title="http://purl.org/net/VideoGameOntology#releaseDate">release Date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isAchievementInGame"
+               title="http://purl.org/net/VideoGameOntology#isAchievementInGame">is achievement in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCharacterInGame"
+               title="http://purl.org/net/VideoGameOntology#isCharacterInGame">is character in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventInGame"
+               title="http://purl.org/net/VideoGameOntology#isEventInGame">is event in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isItemInGame"
+               title="http://purl.org/net/VideoGameOntology#isItemInGame">is item in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSessionInGame"
+               title="http://purl.org/net/VideoGameOntology#isSessionInGame">is session in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#playsGame" title="http://purl.org/net/VideoGameOntology#playsGame">plays game</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GameEvent">
+      <h3>Game event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#GameEvent</p>
+      <div class="comment">
+         <p>The vgo:GameEvent describes an event that takes place in a game without straight player interaction. GameEvents are often very specific for each game. Examples of vgo:GameEvent could be an enemy dying, connecting to a multiplayer server, loading a new level or playing an animation.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/killEnemyEvent&gt;
+                  a vgo:GameEvent;
+                  rdfs:comment "An event that is triggered when an enemy is killed.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InstantaneousEvent"
+               title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GainEvent" title="http://purl.org/net/VideoGameOntology#GainEvent">Gain event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LoseEvent" title="http://purl.org/net/VideoGameOntology#LoseEvent">Lose event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GameProduct">
+      <h3>Game Product<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#GameProduct</p>
+      <div class="comment">
+         <p>A vgo:GameProduct is anything that is for sale inside a game. These can be either normal game items purchased with in-game currency or with real world money. An example of vgo:GameProduct could be a consumable health potion bought with real money, a better weapon or some visual improvement (e.g. Hats in Steam). Basically a Game Product can be anything, a character, an item or an achievement.</p>
+         <p>GameProduct is a subclass of Good Relations: ProductOrService &amp; schema:Product. Since vgo:GameProduct is a type of buyable product, it reuses the properties available in the schema and Good Relations, such as currency price, validity of the offer and so on.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/GameCoin&gt;
+                  a vgo:GameProduct;
+                  rdfs:comment "GameCoin is a game product that can be purchased with real money and used to buy items inside the game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://purl.org/goodrelations/v1#ProductOrService">gr:ProductOrService</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://schema.org/Product">schema:Product</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#PlayingArea"
+               title="http://purl.org/net/VideoGameOntology#PlayingArea">Playing area</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#purchasesGameOffering"
+               title="http://purl.org/net/VideoGameOntology#purchasesGameOffering">purchases game offering</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Genre">
+      <h3>Genre<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Genre</p>
+      <div class="comment">
+         <p>The vgo:Genre class describes the genre a game belongs to. All of the games have at least one genre. Examples of this are RPG, Simulator and Adventure</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/RPG&gt;
+                  a vgo:GameGenre;
+                  rdfs:comment "RPG is a genre of role playing games, such as Baldur's Gate or World of Warcraft.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasGameGenre"
+               title="http://purl.org/net/VideoGameOntology#hasGameGenre">has game genre</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HardMode">
+      <h3>Hard mode<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#HardMode</p>
+      <div class="comment">
+         <p>The vgo:HardMode achievement describes succeeding in a game on a high difficulty level. An example could be completing the â€œDoomâ€� game on Nightmare difficulty level.</p>
+         <p>
+          <pre>
+             For Example, see section <a href="#Collection">Collection</a>
+          </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InAppPurchaseEvent">
+      <h3>In-app purchase event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#InAppPurchaseEvent</p>
+      <div class="comment">
+         <p>The vgo:InAppPurchaseEvent describes an event that is related to making a purchase with real money inside a game. This is a subclass of InstantaneousEvent because it happens at certain moment in time. An example of vgo:InAppPurchaseEvent would be unlocking secret levels with real money or purchasing better equipment with real money.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/PurchaseCoinEvent&gt;
+                  a vgo:InAppPurchaseEvent;
+                  rdfs:comment "Purchase coin event describes an event where a player has purchased coins with real money.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InstantaneousEvent"
+               title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#purchasesGameOffering"
+               title="http://purl.org/net/VideoGameOntology#purchasesGameOffering">purchases game offering</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InstantaneousEvent">
+      <h3>Instantaneous event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#InstantaneousEvent</p>
+      <div class="comment">
+         <p>The vgo:InstantaneousEvent class describes an event that happens during the gameplay at a certain moment in time. This can be a player gaining an achievement, killing an enemy or making an In-app purchase.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/MyEvent&gt;
+                 a vgo:InstantaneousEvent;
+                 rdfs:comment "Describes any event that has happened during a gameplay session.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GameEvent" title="http://purl.org/net/VideoGameOntology#GameEvent">Game event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InAppPurchaseEvent"
+               title="http://purl.org/net/VideoGameOntology#InAppPurchaseEvent">In-app purchase event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MenuEvent" title="http://purl.org/net/VideoGameOntology#MenuEvent">Menu event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PlayerEvent"
+               title="http://purl.org/net/VideoGameOntology#PlayerEvent">Player event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#eventTime" title="http://purl.org/net/VideoGameOntology#eventTime">event Time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#eventName" title="http://purl.org/net/VideoGameOntology#eventName">event Name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isEventAssociatedToPlayer"
+               title="http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer">is event associated to player</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventInGame"
+               title="http://purl.org/net/VideoGameOntology#isEventInGame">is event in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventInSession"
+               title="http://purl.org/net/VideoGameOntology#isEventInSession">is event in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventRelatedToItem"
+               title="http://purl.org/net/VideoGameOntology#isEventRelatedToItem">is event related to item</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventTriggeredByCharacter"
+               title="http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter">is event triggered by character</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#unlocksAchievement"
+               title="http://purl.org/net/VideoGameOntology#unlocksAchievement">unlocks achievement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Item">
+      <h3>Item<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Item</p>
+      <div class="comment">
+         <p>A vgo:Item portrays any item that exists in a game. The item can either be just visual part of the game or a concrete usable item. As an example an item could be a drinkable potion, a magical sword or just a flower pot.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Potion&gt;
+                 a vgo:Item;
+                 rdfs:comment "A potion is a consumable item from a game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasFeature" title="http://purl.org/net/VideoGameOntology#hasFeature">has feature</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isItemInGame"
+               title="http://purl.org/net/VideoGameOntology#isItemInGame">is item in game</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEventRelatedToItem"
+               title="http://purl.org/net/VideoGameOntology#isEventRelatedToItem">is event related to item</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsItem" title="http://purl.org/net/VideoGameOntology#ownsItem">owns item</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Leaderboard">
+      <h3>Leaderboard<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Leaderboard</p>
+      <div class="comment">
+         <p>The vgo:Leaderboard class describes a ranking system of the players. There can be multiple rankings in a game, for example, the kill-count ranking of Modern Warfare or the best time listing of Formula 1 game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/PongLeaderboard&gt;
+                 a vgo:GameGenre;
+                 rdfs:comment "A leaderboard describing the TOP 10 players of Pong game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLeaderboard"
+               title="http://purl.org/net/VideoGameOntology#hasLeaderboard">has leaderboard</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LoseEvent">
+      <h3>Lose event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#LoseEvent</p>
+      <div class="comment">
+         <p>vgo:LoseEvent describes an event that is related to character/player losing something in a game. This is a subclass of GameEvent as gaining something is related to a specific game. For example, a player can lose a character due to trade with another player. Another example would be a character losing item due to consuming it.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/LosePotionEvent&gt;
+                 a vgo:LoseEvent;
+                 rdfs:comment "An event when a player loses a potion in some way, for example by drinking or selling it.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#GameEvent" title="http://purl.org/net/VideoGameOntology#GameEvent">Game event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Loyalty">
+      <h3>Loyalty<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Loyalty</p>
+      <div class="comment">
+         <p>The vgo:Loyalty achievement is used to give recognition to loyal players. For example, this could be an achievement received after subscribing to the game for a year.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Luck">
+      <h3>Luck<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Luck</p>
+      <div class="comment">
+         <p>The vgo:Lucky describes an achievement that is awarded to the player in a lucky situation. An example of vgo:Lucky achievement would be winning in a lottery or throwing â€œYahtzeeâ€� without re-rolling the dice.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MenuEvent">
+      <h3>Menu event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#MenuEvent</p>
+      <div class="comment">
+         <p>The vgo:MenuEvent describes an event that is related to interacting with the ingame menu. An example of Menu event is muting sounds, changing graphic settings, changing gameplay difficulty or remapping game controls.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/MuteSoundsEvent&gt;
+                 a vgo:MenuEvent;
+                 rdfs:comment "An event when a player mutes the sounds in a game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InstantaneousEvent"
+               title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Minigame">
+      <h3>Minigame<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Minigame</p>
+      <div class="comment">
+         <p>The vgo:Minigame achievement describes success in mini-games that have been included in a certain game but are not vital for completing the game. An example could be to complete all the Pizza deliveries in GTA minigame or gaining over 100 dollars while playing poker in Red Dead Redemption.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Multiplayer">
+      <h3>Multiplayer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Multiplayer</p>
+      <div class="comment">
+         <p>The vgo:Multiplayer achievement describes anything that can be awarded to one or multiple players due to their gameplay in multiplayer. For example, this could be winning 10 Team Fortress matches in a row with the same team or getting killed ten times in a row in Counter-Strike.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Paragon">
+      <h3>Paragon<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Paragon</p>
+      <div class="comment">
+         <p>The vgo:Paragon is a rare achievement that is given only to limited number of players. An example of vgo:Paragon achievement could be the first player to finish a game under 10 hours or the first ten players to complete the game 100% through.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Player">
+      <h3>Player<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Player</p>
+      <div class="comment">
+         <p>The vgo:Player describes the entity playing the game. This can be either a human or a computer. vgo:Player class is used to keep a profile of a certain playing entity and to connect all the games, achievements and characters he/she has. The vgo:Player is a subclass of foaf:Person as it contains all relative information of a certain person.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 rdfs:comment "Japskua is a player in a game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isFriendWithPlayer"
+               title="http://purl.org/net/VideoGameOntology#isFriendWithPlayer">is friend with player</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPlayerInSession"
+               title="http://purl.org/net/VideoGameOntology#isPlayerInSession">is player in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#livesIn" title="http://purl.org/net/VideoGameOntology#livesIn">lives in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsAchievement"
+               title="http://purl.org/net/VideoGameOntology#ownsAchievement">owns achievement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsCharacter"
+               title="http://purl.org/net/VideoGameOntology#ownsCharacter">owns character</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#playsGame" title="http://purl.org/net/VideoGameOntology#playsGame">plays game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#username" title="http://purl.org/net/VideoGameOntology#username">username</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEventAssociatedToPlayer"
+               title="http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer">is event associated to player</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isFriendWithPlayer"
+               title="http://purl.org/net/VideoGameOntology#isFriendWithPlayer">is friend with player</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PlayerEvent">
+      <h3>Player event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#PlayerEvent</p>
+      <div class="comment">
+         <p>The vgo:PlayerEvent describes a vgo:InstantaneousEvent that is caused by the player. For example jumping in the game, throwing an item or pressing a joystick button.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/CloseAdEvent&gt;
+                 a vgo:PlayerEvent;
+                 rdfs:comment "An event when a player closes an advertisement shown in the game.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InstantaneousEvent"
+               title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PlayingArea">
+      <h3>Playing area<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#PlayingArea</p>
+      <div class="comment">
+         <p>The vgo:PlayingArea is the description of a place where the gameplay takes place. All of the games have some kind of area where they are played in. An example of Playing areas could be football field in soccer game, a race track from a racing game or a star system of EVE Online.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/de_dust&gt;
+                 a vgo:PlayingArea;
+                 rdfs:comment "de_dust is a famous level in Counter-Strike.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPlayingArea"
+               title="http://purl.org/net/VideoGameOntology#hasPlayingArea">has Playing area</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Session">
+      <h3>Session<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Session</p>
+      <div class="comment">
+         <p>The vgo:Session class describes a session of gameplay. A session can be a single round of chess, a round of Counter-Strike, one half-time of soccer or one race of Formula 1. vgo:Session class can be used to store gameplay information, especially for analytical reasons.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 rdfs:comment "Session1234 is a type of session.".
+            </pre>
+         </p>  
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#endTime" title="http://purl.org/net/VideoGameOntology#endTime">end Time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isSessionInGame"
+               title="http://purl.org/net/VideoGameOntology#isSessionInGame">is session in game</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startTime" title="http://purl.org/net/VideoGameOntology#startTime">start Time</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isAchievedInSession"
+               title="http://purl.org/net/VideoGameOntology#isAchievedInSession">is achieved in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCharacterInSession"
+               title="http://purl.org/net/VideoGameOntology#isCharacterInSession">is character in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEventInSession"
+               title="http://purl.org/net/VideoGameOntology#isEventInSession">is event in session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPlayerInSession"
+               title="http://purl.org/net/VideoGameOntology#isPlayerInSession">is player in session</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpecialPlayStyle">
+      <h3>Special play style<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#SpecialPlayStyle</p>
+      <div class="comment">
+         <p>The vgo:SpecialPlayStyle achievement is awarded to players after playing a game in special fashion. Often this is something harder than the regular play and requires more player experience to excel in it. An example of vgo:SpecialPlayStyle could be to complete a game without any violence or against a timer.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tutorial">
+      <h3>Tutorial<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Tutorial</p>
+      <div class="comment">
+         <p>The vgo:Tutorial achievement is  awarded to a player for trying out various features of the game. This is often related to learning how to play the game, how the controls work and how the game logic works. An example of vgo:Tutorial could be testing out newly gained special equipment or just playing through the in-game tutorial in the beginning.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Veteran">
+      <h3>Veteran<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Veteran</p>
+      <div class="comment">
+         <p>The vgo:Veteran achievement is an award that is given for accumulating a lot of play hours or game actions. For example, vgo:Veteran could be playing thousand hours of World of Tanks or making 100 goals in ice hockey game.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Virtuosity">
+      <h3>Virtuosity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#Virtuosity</p>
+      <div class="comment">
+         <p>The vgo:Virtuosity describes an achievement that is awarded for playing masterfully in the game. Examples of virtuous play could be finishing the game without saving at all, dying zero times or preventing an opposing team from scoring any goals in a soccer game.</p>
+         <p>
+            <pre>
+               For Example, see section <a href="#Collection">Collection</a>
+            </pre>
+         </p> 
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Achievement"
+               title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Properties</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasFeature" title="http://purl.org/net/VideoGameOntology#hasFeature">has feature</a>
+      </li>
+      <li>
+         <a href="#hasGameGenre"
+            title="http://purl.org/net/VideoGameOntology#hasGameGenre">has game genre</a>
+      </li>
+      <li>
+         <a href="#hasLeaderboard"
+            title="http://purl.org/net/VideoGameOntology#hasLeaderboard">has leaderboard</a>
+      </li>
+      <li>
+         <a href="#hasPlayingArea"
+            title="http://purl.org/net/VideoGameOntology#hasPlayingArea">has Playing area</a>
+      </li>
+      <li>
+         <a href="#isAchievedInSession"
+            title="http://purl.org/net/VideoGameOntology#isAchievedInSession">is achieved in session</a>
+      </li>
+      <li>
+         <a href="#isAchievementInGame"
+            title="http://purl.org/net/VideoGameOntology#isAchievementInGame">is achievement in game</a>
+      </li>
+      <li>
+         <a href="#isCharacterInGame"
+            title="http://purl.org/net/VideoGameOntology#isCharacterInGame">is character in game</a>
+      </li>
+      <li>
+         <a href="#isCharacterInSession"
+            title="http://purl.org/net/VideoGameOntology#isCharacterInSession">is character in session</a>
+      </li>
+      <li>
+         <a href="#isEventAssociatedToPlayer"
+            title="http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer">is event associated to player</a>
+      </li>
+      <li>
+         <a href="#isEventInGame"
+            title="http://purl.org/net/VideoGameOntology#isEventInGame">is event in game</a>
+      </li>
+      <li>
+         <a href="#isEventInSession"
+            title="http://purl.org/net/VideoGameOntology#isEventInSession">is event in session</a>
+      </li>
+      <li>
+         <a href="#isEventRelatedToItem"
+            title="http://purl.org/net/VideoGameOntology#isEventRelatedToItem">is event related to item</a>
+      </li>
+      <li>
+         <a href="#isEventTriggeredByCharacter"
+            title="http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter">is event triggered by character</a>
+      </li>
+      <li>
+         <a href="#isFriendWithPlayer"
+            title="http://purl.org/net/VideoGameOntology#isFriendWithPlayer">is friend with player</a>
+      </li>
+      <li>
+         <a href="#isItemInGame"
+            title="http://purl.org/net/VideoGameOntology#isItemInGame">is item in game</a>
+      </li>
+      <li>
+         <a href="#isPlayerInSession"
+            title="http://purl.org/net/VideoGameOntology#isPlayerInSession">is player in session</a>
+      </li>
+      <li>
+         <a href="#isSessionInGame"
+            title="http://purl.org/net/VideoGameOntology#isSessionInGame">is session in game</a>
+      </li>
+      <li>
+         <a href="#livesIn" title="http://purl.org/net/VideoGameOntology#livesIn">lives in</a>
+      </li>
+      <li>
+         <a href="#ownsAchievement"
+            title="http://purl.org/net/VideoGameOntology#ownsAchievement">owns achievement</a>
+      </li>
+      <li>
+         <a href="#ownsCharacter"
+            title="http://purl.org/net/VideoGameOntology#ownsCharacter">owns character</a>
+      </li>
+      <li>
+         <a href="#ownsItem" title="http://purl.org/net/VideoGameOntology#ownsItem">owns item</a>
+      </li>
+      <li>
+         <a href="#playsGame" title="http://purl.org/net/VideoGameOntology#playsGame">plays game</a>
+      </li>
+      <li>
+         <a href="#purchasesGameOffering"
+            title="http://purl.org/net/VideoGameOntology#purchasesGameOffering">purchases game offering</a>
+      </li>
+      <li>
+         <a href="#unlocksAchievement"
+            title="http://purl.org/net/VideoGameOntology#unlocksAchievement">unlocks achievement</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/creator">
+      <h3>creator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFeature">
+      <h3>has feature<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasFeature</p>
+      <div class="comment">
+         <p>The vgo:hasFeature property indicates what is a vgo:Feature (or ability) of a particular vgo:Item. For example, a fire sword, a healing staff or boots of flight connects item to a feature it can have. An item with connection to potable feature would make the item potable.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Sword&gt;
+                 a vgo:Item;
+                 vgo:hasFeature &lt;http://www.example.com/DamageDealing&gt;;
+                 rdfs:comment "A sword has a damage dealing feature.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feature" title="http://purl.org/net/VideoGameOntology#Feature">Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGameGenre">
+      <h3>has game genre<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasGameGenre</p>
+      <div class="comment">
+         <p>The vgo:hasGameGenre property specifies that a game belongs to a certain game genre. For example, Pong would be an arcade game and Mario a platformer.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Civilization5&gt;
+                 vgo:hasGameGenere &lt;http://www.example.com/Strategy&gt;;
+                 rdfs:comment "Civilization 5 is a game of strategy genre.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Genre" title="http://purl.org/net/VideoGameOntology#Genre">Genre</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLeaderboard">
+      <h3>has leaderboard<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasLeaderboard</p>
+      <div class="comment">
+         <p>The vgo:hasLeaderboard specifies that a leaderboard belongs to a particular game. A game can have one or more leaderboards that keep track of ranking of the players. For example a leaderboard could be ranking of who has the most soccer game victories or who has the fastest lap in a Formula 1 game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Pong&gt;
+                 a vgo:Game;
+                 vgo:hasLeaderboard &lt;http://www.example.com/PongLeaderboard&gt;;
+                 rdfs:comment "Pong has a Pong leaderboard.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Leaderboard"
+                  title="http://purl.org/net/VideoGameOntology#Leaderboard">Leaderboard</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPlayingArea">
+      <h3>has Playing area<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasPlayingArea</p>
+      <div class="comment">
+         <p>The vgo:hasPlayingArea property asserts a gaming area to a specific game. In every game, the gameplay takes place in some Playing area.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/CounterStrike&gt;
+                 a vgo:Game;
+                 vgo:hasPlayingArea &lt;http://wwww.example.com/de_dusst;
+                 rdfs:comment "Counter-Strike has a famous playing are know as de_dust.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PlayingArea"
+                  title="http://purl.org/net/VideoGameOntology#PlayingArea">Playing area</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isAchievedInSession">
+      <h3>is achieved in session<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isAchievedInSession</p>
+      <div class="comment">
+         <p>The property vgo:isAchievedInSession asserts the receiving of an achievement to a certain gameplay session. This enables to keep track of what achievements a player has gained during one gameplay session.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:Achievement;
+                 vgo:isAchievedInSession &lt;http://www.example.com/Session1234&gt;;
+                 rdfs:comment "Gain 1000 coins achievement was gained during a certain session.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isAchievementInGame">
+      <h3>is achievement in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isAchievementInGame</p>
+      <div class="comment">
+         <p>The property vgo:isAchievementInGame asserts that a specific vgo:Achievement can be earned in a particular vgo:Game. An achievement must belong to a certain game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:Achievement;
+                 vgo:isAchievementInGame &lt;http://www.example.com/MyGame;
+                 rdfs:comment "Collect 1000 coins achievements is an achievement from game MyGame.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCharacterInGame">
+      <h3>is character in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isCharacterInGame</p>
+      <div class="comment">
+         <p>vgo:isCharacterInGame property describes the relation between a vgo:Character and a vgo:Game. a vgo:Character always belongs to a certain game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Link&gt;
+                 a vgo:Character;
+                 vgo:isCharacterInGame &lt;http://www.example.com/Zelda&gt;;
+                 rdfs:comment "Link is a character from game of Zelda.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCharacterInSession">
+      <h3>is character in session<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isCharacterInSession</p>
+      <div class="comment">
+         <p>The vgo:isCharacterInSession property connects the vgo:Character to a vgo:Session. A character participates in a game session (e.g., a football match or a counter strike round) during a period of time. As players can have multiple characters, a character needs to be connected to the session, in order to know which of those characters participated in the certain session.</p>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEventAssociatedToPlayer">
+      <h3>is event associated to player<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isEventAssociatedToPlayer</p>
+      <div class="comment">
+         <p>The vgo:isEventAssociatedToPlayer property asserts an event to a specific vgo:Player. A player may have caused an event to happen through the actions of his/her character and this property is used to connect the real person to the event.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Link&gt;
+                 a vgo:Character;
+                 vgo:isCharacterInSession &lt;http://www.example.com/Session1234&gt;;
+                 rdfs:comment "Link is a character from a session Session1234.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEventInGame">
+      <h3>is event in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isEventInGame</p>
+      <div class="comment">
+         <p>The vgo:isEventInGame property asserts an event to a specific game. An event always happens inside a specific a game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/KillEnemy&gt;
+                 a vgo:InstataneousEvent;
+                 vgo:isEventInGame &lt;http://www.example.com/Zelda&gt;;
+                 rdfs:comment "KillEnemy is an event from game of Zelda.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEventInSession">
+      <h3>is event in session<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isEventInSession</p>
+      <div class="comment">
+         <p>The vgo:isEventInSession property links an event to a specific gameplay session. An event always happens during a certain session and this property enables to link the events to that session. For example, an event of moving the queen in game of chess should be connected to a session of chess.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:InstataneousEvent;
+                 vgo:isEventInSession &lt;http://www.example.com/Session1234&gt;;
+                 rdfs:comment "Collect 1000 Coins is an even that happened during session Session1234.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEventRelatedToItem">
+      <h3>is event related to item<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isEventRelatedToItem</p>
+      <div class="comment">
+         <p>The vgo:isEventRelatedToItem property asserts an event to a specific item. This property is used to describe an event that includes an item in one way or another. For example, an event where character gains a new sword can be described with this relation.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:isEventRelatedToItem &lt;http://www.example.com/Coin&gt;;
+                 rdfs:comment "Collect 1000 Coins is an event that is related to item Coin. It is received by collecting 1000 Coins in the game.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEventTriggeredByCharacter">
+      <h3>is event triggered by character<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter</p>
+      <div class="comment">
+         <p>The vgo:isEventTriggeredByCharacter connects the vgo:InstantaneousEvent to specific vgo:Character. This describes that an event is often caused by a character. The character in question can be either a character controlled by a player or a computer. For example, both player and non-player characters can trigger a character death event.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Collect1000Coins&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:isEventTriggeredByCharacter &lt;http://www.example.com/MyLink&gt;;
+                 rdfs:comment "Collect 1000 Coins event was triggered by character MyLink.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFriendWithPlayer">
+      <h3>is friend with player<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isFriendWithPlayer</p>
+      <div class="comment">
+         <p>The vgo:isFriendWithPlayer describes a connection between players. The property is used to model the friends a player has and with whom he might be playing games with. The friends of a player are not bound necessarily to particular game, but can be describe the friendly playing relationship in overall.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:isFriendsWithPlayer &lt;http://www.example.com/Player1337&gt;;
+                 rdfs:comment "Player Japskua is friends with Player1337.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> symmetric</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/knows">knows</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isItemInGame">
+      <h3>is item in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isItemInGame</p>
+      <div class="comment">
+         <p>The vgo:isItemInGame is used to specify which item belongs to a particular game. An item cannot exist alone and thus should always be associated to a certain game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Coin&gt;
+                 a vgo:Item;
+                 vgo:isItemInGame &lt;http://www.example.com/Zelda&gt;;
+                 rdfs:comment "A Coin is an item from the game of Zelda.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPlayerInSession">
+      <h3>is player in session<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isPlayerInSession</p>
+      <div class="comment">
+         <p>The vgo:isPlayerInSession property connects vgo:Player to a specific vgo:Session. This property is used to keep track of the gameplay sessions the player has played and what has happened in those sessions. For example vgo:Player may have participated in a this can be a one round of Counter-Strike or played one hour session of mario.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:isPlayerInSession &lt;http://www.example.com/Session1234&gt;;
+                 rdfs:comment "Japskua is a player in session Session1234.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSessionInGame">
+      <h3>is session in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isSessionInGame</p>
+      <div class="comment">
+         <p>The vgo:isSessionInGame property links a vgo:Session to a certain vgo:Game. Each gameplay session must belong to a certain game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:isSessionInGame &lt;http://www.example.com/Zelda&gt;;
+                 rdfs:comment "Session1234 is a session from a game of Zelda.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="livesIn">
+      <h3>lives in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#livesIn</p>
+      <div class="comment">
+         <p>The vgo:livesIn describes the connection between a player and his place of existence in the real-world. A vgo:Player is connected to wgs84:SpatialThing as that has descriptions for places where people live and contains more detailed information of them, such as continents and regions.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:livesIn &lt;http://dbpedia.org/page/Finland&gt;;
+                 rdfs:comment "Player Japskua lives in Finland.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://dbpedia.org/ontology/PopulatedPlace">dbpedia:PopulatedPlace</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownsAchievement">
+      <h3>owns achievement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#ownsAchievement</p>
+      <div class="comment">
+         <p>The vgo:ownsAchievement links the vgo:Player to the particular vgo:Achievement earned in a game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:ownsAchievement &lt;http://www.example.com/Collect1000Coins&gt;;
+                 rdfs:comment "Player Japskua owns an achievement of collecting 1000 coins.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownsCharacter">
+      <h3>owns character<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#ownsCharacter</p>
+      <div class="comment">
+         <p>The vgo:ownsCharacter property asserts which characters are owned by a specific player. A player can have multiple characters in one game and this connection is used to define all the different characters a player could be playing. Even though a player deletes, trades or loses his/her character in any way, the connection can be kept to contain the playerâ€™s history of owned characters.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:ownsCharacter &lt;http://www.example.com/Zelda&gt;;
+                 rdfs:comment "Player Japskua owns a character called Zelda.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownsItem">
+      <h3>owns item<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#ownsItem</p>
+      <div class="comment">
+         <p>The vgo:ownsItem describes ownership of an item. A vgo:Item is always owned by a certain vgo:Character. A vgo:Character can own multiple vgo:Items and this relationship is used to keep track of the characterâ€™s owned items. Even though players may lose items, the vgo:ownsItem connection is still held with the item. This approach allows to keep track of characterâ€™s history of owned items.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:ownsItem &lt;http://www.example.com/HealthPotion&gt;;
+                 rdfs:comment "Player Japskua owns a health potion.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="playsGame">
+      <h3>plays game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#playsGame</p>
+      <div class="comment">
+         <p>the vgo:playsGame property asserts which games has the vgo:Player played at any point of time.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Japskua&gt;
+                 a vgo:Player;
+                 vgo:playsGame &lt;http://www.example.com/WorldOfWarcraft&gt;;
+                 rdfs:comment "Player Japskua plays the game of World of Warcraft.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="purchasesGameOffering">
+      <h3>purchases game offering<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#purchasesGameOffering</p>
+      <div class="comment">
+         <p>The vgo:purchasesGameOffering property aseerts a vgo:InAppPurchaseEvent to a specific vgo:GameProduct. This property describes what is purchased by the In-app purchase event that the player has done.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/BuySuperCoinEvent&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:purchasesGameOffering &lt;http://www.example.com/SuperCoin&gt;;
+                 rdfs:comment "Buy Super Coin event purchases the SuperCoin product inside the game.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InAppPurchaseEvent"
+                  title="http://purl.org/net/VideoGameOntology#InAppPurchaseEvent">In-app purchase event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#GameProduct"
+                  title="http://purl.org/net/VideoGameOntology#GameProduct">Game Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="unlocksAchievement">
+      <h3>unlocks achievement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#unlocksAchievement</p>
+      <div class="comment">
+         <p>The vgo:unlocksAchievement property asserts an event to a certain achievement. An achievement is always unlocked as a consequence of some event. For example, eating the 100th piece of cake unlocks the "Cake Eater" achievement.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/GainCoin&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:unlocksAchievement &lt;http://www.example.com/Collect1000Coins&gt;;
+                 rdfs:comment "An event of Gaining 1000th Coin unlocks the achievement Collect 1000 Coins.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Properties</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#endTime" title="http://purl.org/net/VideoGameOntology#endTime">end Time</a>
+      </li>
+      <li>
+         <a href="#eventTime" title="http://purl.org/net/VideoGameOntology#eventTime">event Time</a>
+      </li>
+      <li>
+         <a href="#eventName" title="http://purl.org/net/VideoGameOntology#eventName">event Name</a>
+      </li>
+      <li>
+         <a href="#releaseDate"
+            title="http://purl.org/net/VideoGameOntology#releaseDate">release Date</a>
+      </li>
+      <li>
+         <a href="#startTime" title="http://purl.org/net/VideoGameOntology#startTime">start Time</a>
+      </li>
+      <li>
+         <a href="#username" title="http://purl.org/net/VideoGameOntology#username">username</a>
+      </li>
+   </ul>
+   <div class="entity" id="endTime">
+      <h3>end Time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#endTime</p>
+      <div class="comment">
+         <p>endTime describes the ending moment in time of a single Session. endTime connects the session to a DateTime value which holds the moment when the session ended.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:endTime "2015-01-10T16:30:00";
+                 rdfs:comment "The session ended at 16.30.00, on 10th of January, 2015.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="eventTime">
+      <h3>event Time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#eventTime</p>
+      <div class="comment">
+         <p>time describes the connection of InstantaneousEvent happening at a certain moment of time. time Conncets the event to a DateTime value that describes the moment when the event happened.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/GainCoinEvent&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:eventTime "2015-01-10T16:24:00";
+                 rdfs:comment "The GainCoinEvent happened at 16.24.00, on 10th of January, 2015.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">sxd:dateTime</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="eventName">
+      <h3>event Name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#eventName</p>
+      <div class="comment">
+         <p>name connects InstantaneousEvent a text string. This allows the event to have a name to recognize it for.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/GainCoinEvent&gt;
+                 a vgo:InstantaneousEvent;
+                 vgo:eventName "Gain a coin event".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstantaneousEvent"
+                  title="http://purl.org/net/VideoGameOntology#InstantaneousEvent">Instantaneous event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">xsd:string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="releaseDate">
+      <h3>release Date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#releaseDate</p>
+      <div class="comment">
+         <p>releaseDate connects a game to a time which describes the release date of the game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/AtariPong&gt;
+                 a vgo:Session;
+                 ex:AtariPong vgo:releaseDate "1972-02-12T00:00:00+00:00"^^xsd:DateTime;
+                 rdfs:comment "Atari Pong was released on 12th of February, 1972".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startTime">
+      <h3>start Time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#startTime</p>
+      <div class="comment">
+         <p>startTime describes the starting moment in time of a single Session. startTime connects the session to a DateTime value which holds the moment when the session started.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:startTime "2015-01-10T16:17:00";
+                 rdfs:comment "The session started at 16.17.00, on 10th of January, 2015.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="username">
+      <h3>username<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#username</p>
+      <div class="comment">
+         <p>The username connects player to a text string which describes the username a player has.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Player156a85sg53&gt;
+                 a vgo:Player;
+                 vgo:username "MrKillEmAll".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">xsd:string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>
+<div id="inverse">
+   <h2>Useful Inverse Properties</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#hasAchievement"
+            title="http://purl.org/net/VideoGameOntology#hasAchievement">has achievement</a>
+      </li>
+      <li>
+         <a href="#hasCharacter"
+            title="http://purl.org/net/VideoGameOntology#hasCharacter">has character</a>
+      </li>
+      <li>
+         <a href="#hasItem" title="http://purl.org/net/VideoGameOntology#hasItem">has item</a>
+      </li>
+      <li>
+         <a href="#involvesAchievement"
+            title="http://purl.org/net/VideoGameOntology#involvesAchievement">involves achievement</a>
+      </li>
+      <li>
+         <a href="#involvesCharacter"
+            title="http://purl.org/net/VideoGameOntology#involvesCharacter">involves character</a>
+      </li>
+      <li>
+         <a href="#involvesPlayer"
+            title="http://purl.org/net/VideoGameOntology#involvesPlayer">involves player</a>
+      </li>
+      <li>
+         <a href="#isLeaderboardInGame"
+            title="http://purl.org/net/VideoGameOntology#isLeaderboardInGame">is leaderboard in game</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasAchievement">
+      <h3>has achievement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasAchievement</p>
+      <div class="comment">
+         <p>Optional property, used to describe what achievements a game has</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Civilization5&gt;
+                 a vgo:Game;
+                 vgo:hasAchievement &lt;http://www.example.com/DominationVictory&gt;;
+                 rdfs:comment "Civilization 5 game has a Domination Victory achievement.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCharacter">
+      <h3>has character<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasCharacter</p>
+      <div class="comment">
+         <p>The vgo:hasCharacter property specifies that a game has a specific character. A game can have more than one characters involved.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Zelda&gt;
+                 a vgo:Game;
+                 vgo:hasCharacter &lt;http://www.example.com/Link&gt;;
+                 rdfs:comment "A game of Zelda has a character Link.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasItem">
+      <h3>has item<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#hasItem</p>
+      <div class="comment">
+         <p>The vgo:hasItem property specifies that a game has a specific item. A game often contains more than one items.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Zelda&gt;
+                 a vgo:Game;
+                 vgo:hasItem &lt;http://www.example.com/MasterSword&gt;;
+                 rdfs:comment "A game of Zelda has an item called Master Sword.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Item" title="http://purl.org/net/VideoGameOntology#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="involvesAchievement">
+      <h3>involves achievement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#involvesAchievement</p>
+      <div class="comment">
+         <p>A session can involve an achievement</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:involvesAchievement &lt;http://www.example.com/Collect1000Coins&gt;;
+                 rdfs:comment "The Session1234 involves an Achievement Collect 1000 Coins.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Achievement"
+                  title="http://purl.org/net/VideoGameOntology#Achievement">Achievement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="involvesCharacter">
+      <h3>involves character<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#involvesCharacter</p>
+      <div class="comment">
+         <p>A certain session can involve a certain character</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:involvesCharacter &lt;http://www.example.com/Link&gt;;
+                 rdfs:comment "The Session1234 involves a character Link.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Character" title="http://purl.org/net/VideoGameOntology#Character">Character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="involvesPlayer">
+      <h3>involves player<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#involvesPlayer</p>
+      <div class="comment">
+         <p>The vgo:involvesPlayer property specifies that a session involves a specific player. A session may involve more than one player.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/Session1234&gt;
+                 a vgo:Session;
+                 vgo:involvesPlayer &lt;http://www.example.com/Japskua&gt;;
+                 rdfs:comment "The Session1234 involves a player known as Japskua.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session" title="http://purl.org/net/VideoGameOntology#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Player" title="http://purl.org/net/VideoGameOntology#Player">Player</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isLeaderboardInGame">
+      <h3>is leaderboard in game<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/VideoGameOntology#isLeaderboardInGame</p>
+      <div class="comment">
+         <p>The vgo:isLeaderboardInGame property specifies that a leaderboard is from a specific game.</p>
+         <p>
+            <pre>
+               @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+               @prefix vgo: &l;http://purl.org/net/videogameontology#&gt; .
+
+               &lt;http://www.example.com/PongLeaderboard1234&gt;
+                 a vgo:Leaderboard;
+                 vgo:isLeaderboardInGame &lt;http://www.example.com/AtariPong&gt;;
+                 rdfs:comment "Pong Leaderboard1234 is an leaderboard from game of Atari Pong.".
+            </pre>
+         </p> 
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Leaderboard"
+                  title="http://purl.org/net/VideoGameOntology#Leaderboard">Leaderboard</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Game" title="http://purl.org/net/VideoGameOntology#Game">Game</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>
