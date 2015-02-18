@@ -3,9 +3,14 @@ Repository for developing collaboratively the video game ontology.
 
 The Video Game Ontology is aimed at modelling video game related information. The main goal is to capture knowledge about events that happen in video games and information about players.
 
+The latest version of the Video Game Ontology can be browsed online in the following link
+
+http://purl.org/net/VideoGameOntology
+
 
 Authors:
-    * Janne Parkkila, Innovation and Software Department, School of Business and Management, Lappeenranta University of Technology, Finland
-    * Filip Radulovic, Ontology Engineering Group, Universidad Politécnica de Madrid
-    * María Poveda, Ontology Engineering Group, Universidad Politécnica de Madrid
-    * Daniel Garijo, Ontology Engineering Group, Universidad Politécnica de Madrid
+
+* Janne Parkkila, Innovation and Software Department, School of Business and Management, Lappeenranta University of Technology, Finland
+* Filip Radulovic, Ontology Engineering Group, Universidad Politécnica de Madrid
+* María Poveda, Ontology Engineering Group, Universidad Politécnica de Madrid
+* Daniel Garijo, Ontology Engineering Group, Universidad Politécnica de Madrid
