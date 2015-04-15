@@ -39,6 +39,7 @@
      xmlns:VideoGameOntology="&net;VideoGameOntology#">
     <owl:Ontology rdf:about="&net;VideoGameOntology">
         <terms:created rdf:datatype="&xsd;date">2013-10-22</terms:created>
+		<terms:modified rdf:datatype="&xsd;date">2014-12-19</terms:modified>
         <dc:creator rdf:datatype="&xsd;anyURI">http://delicias.dia.fi.upm.es/members/DGarijo/#me</dc:creator>
         <dc:creator rdf:datatype="&xsd;anyURI">http://filip.milstan.net/</dc:creator>
         <dc:creator rdf:datatype="&xsd;anyURI">http://purl.org/net/mpoveda</dc:creator>
