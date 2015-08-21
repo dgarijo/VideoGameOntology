@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index.html> a prov:Entity;
+	 dc:title "The Video Game Ontology";
+	 prov:wasAttributedTo <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
+	 dc:creator <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
+	 prov:wasAttributedTo <http://www.mendeley.com/profiles/janne-parkkila/>;
+	 dc:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
+	 prov:wasAttributedTo <http://purl.org/net/mpoveda>;
+	 dc:creator <http://purl.org/net/mpoveda>;
+	 prov:wasAttributedTo <http://filip.milstan.net/>;
+	 dc:creator <http://filip.milstan.net/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2013-10-22".

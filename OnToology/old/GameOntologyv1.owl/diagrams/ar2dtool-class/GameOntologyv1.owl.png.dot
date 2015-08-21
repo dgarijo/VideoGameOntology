@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "GameOntology:PlayingArea" "GameOntology:Game" "GameOntology:Leaderboard" "GameOntology:Character" "foaf:Agent" "GameOntology:Genre" "GameOntology:GameProduct" "GameOntology:Item" "GameOntology:InAppPurchaseEvent" "GameOntology:Session" "GameOntology:InstantaneousEvent" "GameOntology:Feature" "GameOntology:Player" "resource:PopulatedSpace" "GameOntology:Achievement" ; /*classes style*/
+	"NULL" -> "60ee9366:14f508aa3a7:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "60ee9366:14f508aa3a7:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "GameOntology:PlayingArea" [ label = "rdf:first" ];
+	"NULL" -> "GameOntology:Achievement" [ label = "rdf:first" ];
+	"NULL" -> "60ee9366:14f508aa3a7:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "GameOntology:Item" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "GameOntology:Character" [ label = "rdf:first" ];
+	"NULL" -> "GameOntology:Game" [ label = "rdf:first" ];
+	"NULL" -> "60ee9366:14f508aa3a7:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "60ee9366:14f508aa3a7:-7ffb" [ label = "owl:unionOf" ];
+	"GameOntology:isFriendWithPlayer" -> "foaf:knows" [ label = "rdfs:subPropertyOf" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Game" [ label = "GameOntology:happensInGame" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Session" [ label = "GameOntology:happensInSession" ];
+	"GameOntology:Game" -> "foaf:Agent" [ label = "terms:creator" ];
+	"GameOntology:Item" -> "GameOntology:Feature" [ label = "GameOntology:posessesFeature" ];
+	"GameOntology:Character" -> "GameOntology:Game" [ label = "GameOntology:isCharacterInGame" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Player" [ label = "GameOntology:isAssociatedToPlayer" ];
+	"GameOntology:InstantaneousEvent" -> "xsd:string" [ label = "GameOntology:name" ];
+	"GameOntology:Character" -> "GameOntology:Session" [ label = "GameOntology:participatesInSession" ];
+	"GameOntology:Item" -> "GameOntology:Game" [ label = "GameOntology:existsInGame" ];
+	"GameOntology:Session" -> "xsd:dateTime" [ label = "GameOntology:startTime" ];
+	"GameOntology:Player" -> "xsd:string" [ label = "GameOntology:username" ];
+	"GameOntology:Player" -> "GameOntology:Character" [ label = "GameOntology:ownsCharacter" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Item" [ label = "GameOntology:isRelatedToItem" ];
+	"GameOntology:Player" -> "resource:PopulatedSpace" [ label = "GameOntology:livesIn" ];
+	"GameOntology:Player" -> "GameOntology:Game" [ label = "GameOntology:playsGame" ];
+	"GameOntology:Player" -> "GameOntology:Player" [ label = "GameOntology:isFriendWithPlayer" ];
+	"GameOntology:Achievement" -> "GameOntology:Game" [ label = "GameOntology:isAchievementInGame" ];
+	"GameOntology:Character" -> "GameOntology:Item" [ label = "GameOntology:ownsItem" ];
+	"GameOntology:InAppPurchaseEvent" -> "GameOntology:GameProduct" [ label = "GameOntology:purchasesGameOffering" ];
+	"GameOntology:Game" -> "xsd:dateTime" [ label = "GameOntology:releaseDate" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Character" [ label = "GameOntology:isTriggeredByCharacter" ];
+	"GameOntology:InstantaneousEvent" -> "xsd:dateTime" [ label = "GameOntology:eventTime" ];
+	"GameOntology:Game" -> "GameOntology:Genre" [ label = "GameOntology:isGameGenre" ];
+	"GameOntology:Session" -> "GameOntology:Game" [ label = "GameOntology:isSessionInGame" ];
+	"GameOntology:Game" -> "GameOntology:PlayingArea" [ label = "GameOntology:containsPlayingArea" ];
+	"GameOntology:Achievement" -> "GameOntology:Session" [ label = "GameOntology:isReceivedInSession" ];
+	"GameOntology:InstantaneousEvent" -> "GameOntology:Achievement" [ label = "GameOntology:unlocksAchievement" ];
+	"GameOntology:Player" -> "GameOntology:Session" [ label = "GameOntology:playsSession" ];
+	"GameOntology:Game" -> "GameOntology:Leaderboard" [ label = "GameOntology:containsLeaderboard" ];
+	"GameOntology:Session" -> "xsd:dateTime" [ label = "GameOntology:endTime" ];
+	"GameOntology:Player" -> "GameOntology:Achievement" [ label = "GameOntology:ownsAchievement" ];
+
+}
