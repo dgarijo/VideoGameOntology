@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "VideoGameOntology:GameEvent" "VideoGameOntology:Veteran" "VideoGameOntology:Achievement" "VideoGameOntology:GameProduct" "VideoGameOntology:Tutorial" "VideoGameOntology:Loyalty" "VideoGameOntology:HardMode" "foaf:Agent" "VideoGameOntology:Leaderboard" "VideoGameOntology:Minigame" "VideoGameOntology:Luck" "-106522f4:14f508ae6ab:-7ffc" "VideoGameOntology:Completion" "VideoGameOntology:PlayerEvent" "schema:Product" "VideoGameOntology:Multiplayer" "VideoGameOntology:Virtuosity" "VideoGameOntology:Paragon" "owl:Thing" "VideoGameOntology:Session" "VideoGameOntology:GainEvent" "VideoGameOntology:Player" "VideoGameOntology:InstantaneousEvent" "v1:ProductOrService" "VideoGameOntology:InAppPurchaseEvent" "VideoGameOntology:LoseEvent" "VideoGameOntology:SpecialPlayStyle" "VideoGameOntology:Curiosity" "VideoGameOntology:Fandom" "VideoGameOntology:MenuEvent" "VideoGameOntology:Collection" ; /*classes style*/
+	"VideoGameOntology:HardMode" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Player" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Virtuosity" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Loyalty" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Paragon" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Luck" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:MenuEvent" -> "VideoGameOntology:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GainEvent" -> "VideoGameOntology:GameEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:SpecialPlayStyle" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Tutorial" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Session" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GameProduct" -> "-106522f4:14f508ae6ab:-7ffc" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GameProduct" -> "schema:Product" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GameProduct" -> "v1:ProductOrService" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:LoseEvent" -> "VideoGameOntology:GameEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Collection" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Leaderboard" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Veteran" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Multiplayer" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Fandom" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Curiosity" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:PlayerEvent" -> "VideoGameOntology:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:InAppPurchaseEvent" -> "VideoGameOntology:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Completion" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GameEvent" -> "VideoGameOntology:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:Minigame" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
+
+}
