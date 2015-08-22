@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "VideoGameOntology:GameEvent" "VideoGameOntology:Veteran" "VideoGameOntology:Achievement" "VideoGameOntology:GameProduct" "VideoGameOntology:Tutorial" "VideoGameOntology:Loyalty" "VideoGameOntology:HardMode" "foaf:Agent" "VideoGameOntology:Leaderboard" "VideoGameOntology:Minigame" "VideoGameOntology:Luck" "VideoGameOntology:Completion" "VideoGameOntology:PlayerEvent" "schema:Product" "VideoGameOntology:Multiplayer" "VideoGameOntology:Virtuosity" "VideoGameOntology:Paragon" "owl:Thing" "VideoGameOntology:Session" "VideoGameOntology:GainEvent" "VideoGameOntology:Player" "VideoGameOntology:InstantaneousEvent" "v1:ProductOrService" "VideoGameOntology:InAppPurchaseEvent" "VideoGameOntology:LoseEvent" "VideoGameOntology:SpecialPlayStyle" "VideoGameOntology:Curiosity" "-2078be5f:14f508a4f54:-7ffc" "VideoGameOntology:Fandom" "VideoGameOntology:MenuEvent" "VideoGameOntology:Collection" ; /*classes style*/
+node [shape = rectangle, color="black"]; "VideoGameOntology:GameEvent" "VideoGameOntology:Veteran" "VideoGameOntology:Achievement" "VideoGameOntology:GameProduct" "VideoGameOntology:Tutorial" "VideoGameOntology:Loyalty" "VideoGameOntology:HardMode" "foaf:Agent" "VideoGameOntology:Leaderboard" "VideoGameOntology:Minigame" "VideoGameOntology:Luck" "VideoGameOntology:Completion" "VideoGameOntology:PlayerEvent" "schema:Product" "VideoGameOntology:Multiplayer" "VideoGameOntology:Virtuosity" "VideoGameOntology:Paragon" "owl:Thing" "VideoGameOntology:Session" "VideoGameOntology:GainEvent" "VideoGameOntology:Player" "VideoGameOntology:InstantaneousEvent" "v1:ProductOrService" "VideoGameOntology:InAppPurchaseEvent" "VideoGameOntology:LoseEvent" "VideoGameOntology:SpecialPlayStyle" "VideoGameOntology:Curiosity" "-7d86b4da:14f54b45592:-7ffc" "VideoGameOntology:Fandom" "VideoGameOntology:MenuEvent" "VideoGameOntology:Collection" ; /*classes style*/
 	"VideoGameOntology:HardMode" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:Player" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:Virtuosity" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
@@ -13,7 +13,7 @@ node [shape = rectangle, color="black"]; "VideoGameOntology:GameEvent" "VideoGam
 	"VideoGameOntology:SpecialPlayStyle" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:Tutorial" -> "VideoGameOntology:Achievement" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:Session" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"VideoGameOntology:GameProduct" -> "-2078be5f:14f508a4f54:-7ffc" [ label = "rdfs:subClassOf" ];
+	"VideoGameOntology:GameProduct" -> "-7d86b4da:14f54b45592:-7ffc" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:GameProduct" -> "schema:Product" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:GameProduct" -> "v1:ProductOrService" [ label = "rdfs:subClassOf" ];
 	"VideoGameOntology:LoseEvent" -> "VideoGameOntology:GameEvent" [ label = "rdfs:subClassOf" ];

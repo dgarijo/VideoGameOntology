@@ -2,16 +2,16 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "VideoGameOntology:Item" "VideoGameOntology:Achievement" "VideoGameOntology:GameProduct" "VideoGameOntology:Character" "foaf:Agent" "VideoGameOntology:Leaderboard" "ontology:PopulatedPlace" "VideoGameOntology:Session" "VideoGameOntology:Player" "VideoGameOntology:Feature" "VideoGameOntology:InstantaneousEvent" "VideoGameOntology:InAppPurchaseEvent" "VideoGameOntology:Genre" "VideoGameOntology:PlayingArea" "VideoGameOntology:Game" ; /*classes style*/
-	"NULL" -> "-538ab633:14f508af0bc:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "VideoGameOntology:Character" [ label = "rdf:first" ];
-	"NULL" -> "-538ab633:14f508af0bc:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "7ae889e5:14f54b4df39:-7ff7" [ label = "rdf:rest" ];
 	"NULL" -> "VideoGameOntology:PlayingArea" [ label = "rdf:first" ];
-	"NULL" -> "-538ab633:14f508af0bc:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "7ae889e5:14f54b4df39:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "VideoGameOntology:Achievement" [ label = "rdf:first" ];
-	"NULL" -> "-538ab633:14f508af0bc:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "7ae889e5:14f54b4df39:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "7ae889e5:14f54b4df39:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "VideoGameOntology:Item" [ label = "rdf:first" ];
-	"NULL" -> "-538ab633:14f508af0bc:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "7ae889e5:14f54b4df39:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "VideoGameOntology:Game" [ label = "rdf:first" ];
 	"VideoGameOntology:isFriendWithPlayer" -> "foaf:knows" [ label = "rdfs:subPropertyOf" ];
 	"VideoGameOntology:Character" -> "VideoGameOntology:Game" [ label = "VideoGameOntology:isCharacterInGame" ];

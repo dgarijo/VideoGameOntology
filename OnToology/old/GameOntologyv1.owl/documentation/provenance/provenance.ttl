@@ -11,5 +11,6 @@
 	 dc:creator <http://delicias.dia.fi.upm.es/members/mpoveda/>;
 	 prov:wasAttributedTo <http://www.mendeley.com/profiles/janne-parkkila/>;
 	 dc:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "".];
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2013-10-22".
