@@ -2,17 +2,17 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "GameOntology:PlayingArea" "GameOntology:Game" "GameOntology:Leaderboard" "GameOntology:Character" "foaf:Agent" "GameOntology:Genre" "GameOntology:GameProduct" "GameOntology:Item" "GameOntology:InAppPurchaseEvent" "GameOntology:Session" "GameOntology:InstantaneousEvent" "GameOntology:Feature" "GameOntology:Player" "resource:PopulatedSpace" "GameOntology:Achievement" ; /*classes style*/
-	"NULL" -> "60ee9366:14f508aa3a7:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "60ee9366:14f508aa3a7:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "1aea8fe5:14f54b4a386:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "GameOntology:PlayingArea" [ label = "rdf:first" ];
+	"NULL" -> "1aea8fe5:14f54b4a386:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "GameOntology:Achievement" [ label = "rdf:first" ];
-	"NULL" -> "60ee9366:14f508aa3a7:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "GameOntology:Item" [ label = "rdf:first" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "1aea8fe5:14f54b4a386:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "1aea8fe5:14f54b4a386:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "GameOntology:Character" [ label = "rdf:first" ];
 	"NULL" -> "GameOntology:Game" [ label = "rdf:first" ];
-	"NULL" -> "60ee9366:14f508aa3a7:-7ff7" [ label = "rdf:rest" ];
-	"NULL" -> "60ee9366:14f508aa3a7:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "1aea8fe5:14f54b4a386:-7ff7" [ label = "rdf:rest" ];
 	"GameOntology:isFriendWithPlayer" -> "foaf:knows" [ label = "rdfs:subPropertyOf" ];
 	"GameOntology:InstantaneousEvent" -> "GameOntology:Game" [ label = "GameOntology:happensInGame" ];
 	"GameOntology:InstantaneousEvent" -> "GameOntology:Session" [ label = "GameOntology:happensInSession" ];

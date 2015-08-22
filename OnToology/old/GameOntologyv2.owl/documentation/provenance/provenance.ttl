@@ -11,5 +11,6 @@
 	 dc:creator <http://purl.org/net/mpoveda>;
 	 prov:wasAttributedTo <http://filip.milstan.net/>;
 	 dc:creator <http://filip.milstan.net/>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "".];
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2013-10-22".

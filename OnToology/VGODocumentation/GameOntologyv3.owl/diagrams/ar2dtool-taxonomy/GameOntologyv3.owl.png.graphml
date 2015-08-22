@@ -331,19 +331,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-2078be5f:14f508a4f54:-7ffc">
+      <node id="nid_-7d86b4da:14f54b45592:-7ffc">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2078be5f:14f508a4f54:-7ffc</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-7d86b4da:14f54b45592:-7ffc</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_VideoGameOntology:GameProduct" target="nid_-2078be5f:14f508a4f54:-7ffc">
+    <edge id="eid_rdfs:subClassOf11" source="nid_VideoGameOntology:GameProduct" target="nid_-7d86b4da:14f54b45592:-7ffc">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
