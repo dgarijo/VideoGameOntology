@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="http://example.com/A_True_Warrior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Angry_Rats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Cloth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Firefox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Golden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Leather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Mail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Armor_Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/At_Worlds_End"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Axe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Cake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Chest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Coward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Fat_Loot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Fire_Potion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Flask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/For_Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Foxy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Hot_Spot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Hunter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Into_The_Wild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/KillEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Bat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Crab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Death_Knight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Eye"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Goblin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Ogre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Rat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Skeleton_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Spectre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Kill_Wizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Meatshield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Ninja_Loot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/No_Mans_Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Player_Clicked_Asteroids_Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Potion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/RPG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Rickrolld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Skull_Collector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Small_Talk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Still_Alive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Sword_Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Sword_Golden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Tomb_Raider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Treasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Underground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon_Axe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon_Morningstar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon_Red_Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon_Sword_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Weapon_Sword_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://example.com/A_True_Warrior"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Angry_Rats"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Blue"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Cloth"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Firefox"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Golden"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Leather"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Mail"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Plate"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Armor_Red"/>
+        <Class IRI="http://example.com/Armor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/At_Worlds_End"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Axe"/>
+        <Class IRI="http://example.com/Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Burger"/>
+        <Class IRI="http://example.com/Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Cake"/>
+        <Class IRI="http://example.com/Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Chest"/>
+        <Class IRI="http://example.com/Treasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Club"/>
+        <Class IRI="http://example.com/Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Coward"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Fat_Loot"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Fire_Potion"/>
+        <Class IRI="http://example.com/Potion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Flask"/>
+        <Class IRI="http://example.com/Potion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Food"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/For_Science"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Foxy"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Hero"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Hot_Spot"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Hunter"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Into_The_Wild"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Bat"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Boss"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Crab"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Death_Knight"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Eye"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Goblin"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Ogre"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Rat"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Skeleton"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Skeleton_2"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Snake"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Spectre"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Kill_Wizard"/>
+        <Class IRI="http://example.com/KillEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Meatshield"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Ninja_Loot"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/No_Mans_Land"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Player_Clicked_Asteroids_Link"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Potion"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/RPG"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Rickrolld"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Skull_Collector"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Small_Talk"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Still_Alive"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="http://example.com/Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Sword_Blue"/>
+        <Class IRI="http://example.com/Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Sword_Golden"/>
+        <Class IRI="http://example.com/Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Tomb_Raider"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Treasure"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Underground"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon_Axe"/>
+        <Class IRI="http://example.com/Axe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon_Morningstar"/>
+        <Class IRI="http://example.com/Club"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon_Red_Sword"/>
+        <Class IRI="http://example.com/Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon_Sword_1"/>
+        <Class IRI="http://example.com/Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Weapon_Sword_2"/>
+        <Class IRI="http://example.com/Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

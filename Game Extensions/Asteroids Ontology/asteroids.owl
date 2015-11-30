@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="http://example.com/Arcade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Asteroids_Game_Over"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Asteroids_Player_Dies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Asteroids_Start_New_Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Destory_First_Asteroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Idler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/New_Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Score_1000_Points"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://example.com/Ten_Games_In_A_Row"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Fandom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://example.com/Arcade"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Asteroids_Game_Over"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Asteroids_Player_Dies"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Asteroids_Start_New_Game"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Destory_First_Asteroid"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Idler"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/New_Player"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Score_1000_Points"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://example.com/Ten_Games_In_A_Row"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Fandom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Fandom"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
