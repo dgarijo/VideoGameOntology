@@ -10,43 +10,17 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4"
+     xml:base="https://w3id.org/games/spec/asteroids#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="https://w3id.org/games/spec/asteroids#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Declaration>
-        <Class IRI="http://example.com/Arcade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Asteroids_Game_Over"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Asteroids_Player_Dies"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Asteroids_Start_New_Game"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Destory_First_Asteroid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Idler"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/New_Player"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Score_1000_Points"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Ten_Games_In_A_Row"/>
-    </Declaration>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
     </Declaration>
@@ -71,42 +45,33 @@
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="http://example.com/Arcade"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Asteroids_Game_Over"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Asteroids_Player_Dies"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Asteroids_Start_New_Game"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Destory_First_Asteroid"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Idler"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/New_Player"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Score_1000_Points"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Ten_Games_In_A_Row"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Fandom"/>
-    </SubClassOf>
+    <Declaration>
+        <Class IRI="Arcade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Asteroids_Game_Over"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Asteroids_Player_Dies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Asteroids_Start_New_Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Destory_First_Asteroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Idler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="New_Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Score_1000_Points"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ten_Games_In_A_Row"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
@@ -127,6 +92,132 @@
         <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Arcade"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Asteroids_Game_Over"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Asteroids_Player_Dies"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Asteroids_Start_New_Game"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Destory_First_Asteroid"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Idler"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="New_Player"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Score_1000_Points"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ten_Games_In_A_Row"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Fandom"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Arcade</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An arcade type of game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Arcade</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Arcade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Asteroids_Game_Over</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Game over event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Asteroids_Game_Over</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Game Over</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Asteroids_Player_Dies</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player losing a ship in the game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Asteroids_Player_Dies</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Player Dies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Asteroids_Start_New_Game</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player starting a new game of Asteroids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Asteroids_Start_New_Game</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Start New Game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Destory_First_Asteroid</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement for destroying the first asteroid in the game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Destory_First_Asteroid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Destroy First Asteroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Idler</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given from idling in the game for a certain amount of time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Idler</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Idler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>New_Player</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Given when a new player starts the game.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>New_Player</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">New Player</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Score_1000_Points</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement that is given for scoring 1000 points in the game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Score_1000_Points</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Score 1000 Points</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Ten_Games_In_A_Row</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given from playing 10 games in a row.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Ten_Games_In_A_Row</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10 Games in a Row</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

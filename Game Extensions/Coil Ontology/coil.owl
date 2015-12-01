@@ -10,46 +10,17 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4"
+     xml:base="https://w3id.org/games/spec/coil#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="https://w3id.org/games/spec/coil#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Declaration>
-        <Class IRI="http://example.com/Arcade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Bomb_Die_Of_Age"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Circle_10_In_A_Row"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Enclose_Bomb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Enclose_Enemy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Enemy_Die_Of_Age"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Fail_Circling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Game_Over"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_Learn_To_Circle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coil_New_Game"/>
-    </Declaration>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
     </Declaration>
@@ -68,46 +39,36 @@
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="http://example.com/Arcade"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Bomb_Die_Of_Age"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Circle_10_In_A_Row"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#HardMode"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Enclose_Bomb"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Enclose_Enemy"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Enemy_Die_Of_Age"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Fail_Circling"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Game_Over"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_Learn_To_Circle"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://example.com/Coil_New_Game"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
+    <Declaration>
+        <Class IRI="Arcade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Bomb_Die_Of_Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Circle_10_In_A_Row"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Enclose_Bomb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Enclose_Enemy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Enemy_Die_Of_Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Fail_Circling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Game_Over"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_Learn_To_Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coil_New_Game"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
@@ -120,6 +81,146 @@
         <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Arcade"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Bomb_Die_Of_Age"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Circle_10_In_A_Row"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#HardMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Enclose_Bomb"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Enclose_Enemy"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Enemy_Die_Of_Age"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Fail_Circling"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Game_Over"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_Learn_To_Circle"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Tutorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coil_New_Game"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Arcade</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An arcade type of game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Arcade</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Arcade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Bomb_Die_Of_Age</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of bomb dying of age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Bomb_Die_Of_Age</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bomb Die of Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Circle_10_In_A_Row</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for circling 10 enemies at a same time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Circle_10_In_A_Row</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Circle 10 in a Row</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Enclose_Bomb</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player enclosing a bomb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Enclose_Bomb</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Enclose Bomb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Enclose_Enemy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player enclosing an enemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Enclose_Enemy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Enclose Enemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Enemy_Die_Of_Age</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of enemy dying of age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Enemy_Die_Of_Age</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Enemy Die of Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Fail_Circling</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for failing in circling an enemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Fail_Circling</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fail Circling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Game_Over</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Game Over event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Game_Over</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Game Over</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_Learn_To_Circle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for learning to circle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_Learn_To_Circle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Learn to Circle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coil_New_Game</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A New Game Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coil_New_Game</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">New Game</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

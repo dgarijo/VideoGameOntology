@@ -10,208 +10,17 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4"
+     xml:base="https://w3id.org/games/spec/browserquest#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/janne/ontologies/2015/10/untitled-ontology-4">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="https://w3id.org/games/spec/browserquest#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Declaration>
-        <Class IRI="http://example.com/A_True_Warrior"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Angry_Rats"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Blue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Cloth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Firefox"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Golden"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Leather"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Mail"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Plate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Armor_Red"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/At_Worlds_End"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Axe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Burger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Cake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Chest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Club"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Coward"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Fat_Loot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Fire_Potion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Flask"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Food"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/For_Science"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Foxy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Hero"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Hot_Spot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Hunter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Into_The_Wild"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/KillEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Bat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Boss"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Crab"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Death_Knight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Eye"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Goblin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Ogre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Rat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Skeleton"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Skeleton_2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Snake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Spectre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Kill_Wizard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Meatshield"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Ninja_Loot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/No_Mans_Land"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Player_Clicked_Asteroids_Link"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Potion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/RPG"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Rickrolld"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Skull_Collector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Small_Talk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Still_Alive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Sword"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Sword_Blue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Sword_Golden"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Tomb_Raider"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Treasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Underground"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon_Axe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon_Morningstar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon_Red_Sword"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon_Sword_1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://example.com/Weapon_Sword_2"/>
-    </Declaration>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
     </Declaration>
@@ -242,286 +51,1118 @@
     <Declaration>
         <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="A_True_Warrior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Angry_Rats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Cloth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Firefox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Golden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Leather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Mail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Armor_Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="At_Worlds_End"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Axe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Chest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fat_Loot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fire_Potion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Flask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="For_Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Foxy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hot_Spot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hunter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Into_The_Wild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KillEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Bat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Crab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Death_Knight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Eye"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Goblin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Ogre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Rat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Skeleton_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Spectre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kill_Wizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Meatshield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ninja_Loot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="No_Mans_Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Player_Clicked_Asteroids_Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Potion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RPG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Rickrolld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Skull_Collector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Small_Talk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Still_Alive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sword_Blue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sword_Golden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tomb_Raider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Treasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Underground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon_Axe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon_Morningstar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon_Red_Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon_Sword_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Weapon_Sword_2"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="http://example.com/A_True_Warrior"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="A_True_Warrior"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Angry_Rats"/>
+        <Class IRI="Angry_Rats"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Blue"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Blue"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Cloth"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Cloth"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Firefox"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Firefox"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Golden"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Golden"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Leather"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Leather"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Mail"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Mail"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Plate"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Plate"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Armor_Red"/>
-        <Class IRI="http://example.com/Armor"/>
+        <Class IRI="Armor_Red"/>
+        <Class IRI="Armor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/At_Worlds_End"/>
+        <Class IRI="At_Worlds_End"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Axe"/>
-        <Class IRI="http://example.com/Weapon"/>
+        <Class IRI="Axe"/>
+        <Class IRI="Weapon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Burger"/>
-        <Class IRI="http://example.com/Food"/>
+        <Class IRI="Burger"/>
+        <Class IRI="Food"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Cake"/>
-        <Class IRI="http://example.com/Food"/>
+        <Class IRI="Cake"/>
+        <Class IRI="Food"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Chest"/>
-        <Class IRI="http://example.com/Treasure"/>
+        <Class IRI="Chest"/>
+        <Class IRI="Treasure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Club"/>
-        <Class IRI="http://example.com/Weapon"/>
+        <Class IRI="Club"/>
+        <Class IRI="Weapon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Coward"/>
+        <Class IRI="Coward"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Fat_Loot"/>
+        <Class IRI="Fat_Loot"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Fire_Potion"/>
-        <Class IRI="http://example.com/Potion"/>
+        <Class IRI="Fire_Potion"/>
+        <Class IRI="Potion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Flask"/>
-        <Class IRI="http://example.com/Potion"/>
+        <Class IRI="Flask"/>
+        <Class IRI="Potion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Food"/>
+        <Class IRI="Food"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/For_Science"/>
+        <Class IRI="For_Science"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Foxy"/>
+        <Class IRI="Foxy"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Hero"/>
+        <Class IRI="Hero"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Hot_Spot"/>
+        <Class IRI="Hot_Spot"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Hunter"/>
+        <Class IRI="Hunter"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Into_The_Wild"/>
+        <Class IRI="Into_The_Wild"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="KillEvent"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Bat"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Bat"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Boss"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Boss"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Crab"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Crab"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Death_Knight"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Death_Knight"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Eye"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Eye"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Goblin"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Goblin"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Ogre"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Ogre"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Rat"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Rat"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Skeleton"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Skeleton"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Skeleton_2"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Skeleton_2"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Snake"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Snake"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Spectre"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Spectre"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Kill_Wizard"/>
-        <Class IRI="http://example.com/KillEvent"/>
+        <Class IRI="Kill_Wizard"/>
+        <Class IRI="KillEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Meatshield"/>
+        <Class IRI="Meatshield"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Ninja_Loot"/>
+        <Class IRI="Ninja_Loot"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/No_Mans_Land"/>
+        <Class IRI="No_Mans_Land"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Player_Clicked_Asteroids_Link"/>
+        <Class IRI="Player_Clicked_Asteroids_Link"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Potion"/>
+        <Class IRI="Potion"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/RPG"/>
+        <Class IRI="RPG"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Rickrolld"/>
+        <Class IRI="Rickrolld"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Skull_Collector"/>
+        <Class IRI="Skull_Collector"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Small_Talk"/>
+        <Class IRI="Small_Talk"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Still_Alive"/>
+        <Class IRI="Still_Alive"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Sword"/>
-        <Class IRI="http://example.com/Weapon"/>
+        <Class IRI="Sword"/>
+        <Class IRI="Weapon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Sword_Blue"/>
-        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="Sword_Blue"/>
+        <Class IRI="Sword"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Sword_Golden"/>
-        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="Sword_Golden"/>
+        <Class IRI="Sword"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Tomb_Raider"/>
+        <Class IRI="Tomb_Raider"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Treasure"/>
+        <Class IRI="Treasure"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Underground"/>
+        <Class IRI="Underground"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon"/>
+        <Class IRI="Weapon"/>
         <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon_Axe"/>
-        <Class IRI="http://example.com/Axe"/>
+        <Class IRI="Weapon_Axe"/>
+        <Class IRI="Axe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon_Morningstar"/>
-        <Class IRI="http://example.com/Club"/>
+        <Class IRI="Weapon_Morningstar"/>
+        <Class IRI="Club"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon_Red_Sword"/>
-        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="Weapon_Red_Sword"/>
+        <Class IRI="Sword"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon_Sword_1"/>
-        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="Weapon_Sword_1"/>
+        <Class IRI="Sword"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://example.com/Weapon_Sword_2"/>
-        <Class IRI="http://example.com/Sword"/>
+        <Class IRI="Weapon_Sword_2"/>
+        <Class IRI="Sword"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>A_True_Warrior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A achievement given for finding a new weapon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>A_True_Warrior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A True Warrior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Angry_Rats</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement for killing 10 rats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Angry_Rats</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Angry Rats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An armor type of item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Blue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A blue armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Blue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Blue Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Cloth</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A cloth armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Cloth</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cloth Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Firefox</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A firefox armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Firefox</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Firefox Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Golden</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A golden armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Golden</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Golden Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Leather</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A leather armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Leather</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Leather Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Mail</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A mail armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Mail</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mail Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Plate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A plate armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Plate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Plate Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Armor_Red</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A red armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Armor_Red</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Red Armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>At_Worlds_End</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for reaching the south shore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>At_Worlds_End</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">At World&apos;s End</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Axe</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Axe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Axe</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Axe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Burger</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A burger to eat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Burger</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Burger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Cake</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An edible cake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Cake</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Chest</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A treasure chest that can be opened</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Chest</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Club</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A club type of weapon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Club</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Club</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Coward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for succesfully escaping an enemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Coward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coward</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Fat_Loot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for getting a new set of armor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Fat_Loot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fat Loot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Fire_Potion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A fire potion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Fire_Potion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fire Potion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Flask</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A flask item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Flask</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Flask</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Food</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Consumable Food Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Food</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>For_Science</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for entering into a portal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>For_Science</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">For Science</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Foxy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for finding the Firefox costume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Foxy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Foxy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Hero</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for defeating the final boss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Hero</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Hot_Spot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for entering the volcanic mountains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Hot_Spot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hot Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Hunter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for killing 50 enemies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Hunter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hunter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Into_The_Wild</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for venturing outside the village</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Into_The_Wild</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Into the Wild</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>KillEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of killing something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>KillEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Bat</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a bat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Bat</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Bat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Boss</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill the final boss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Boss</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Boss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Crab</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a crab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Crab</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Crab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Death_Knight</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Death Knight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Death_Knight</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Death Knight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Eye</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill an Eye</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Eye</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Eye</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Goblin</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Goblin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Goblin</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Goblin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Ogre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill an Ogre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Ogre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Ogre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Rat</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Rat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Rat</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Rat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Skeleton</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Skeleton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Skeleton</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Skeleton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Skeleton_2</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a skeletong of type 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Skeleton_2</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Skeleton 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Snake</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Snake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Snake</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Snake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Spectre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Spectre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Spectre</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Spectre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Kill_Wizard</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Wizard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kill_Wizard</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Wizard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Meatshield</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for receiving 5 000 points of damage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Meatshield</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Meatshield</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Ninja_Loot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for getting hold of loot you didn&apos;t fight for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Ninja_Loot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ninja Loot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>No_Mans_Land</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for travelling through the desert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>No_Mans_Land</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">No Man&apos;s Land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Player_Clicked_Asteroids_Link</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player clicking a link to the Asteroids game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Player_Clicked_Asteroids_Link</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Player Clicked Asteroid&apos;s Link</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Potion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A potable potion item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Potion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Potion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPG</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Role-playing Game Genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPG</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">RPG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Rickrolld</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for taking some singing lessons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Rickrolld</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">RickRoll&apos;d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Skull_Collector</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for killing 10 skeletons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Skull_Collector</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Skull Collector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Small_Talk</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for talking to a non-player character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Small_Talk</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Small Talk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Still_Alive</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for reviving yourself five times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Still_Alive</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Still Alive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sword</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A sword type of item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sword</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sword_Blue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A blue sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sword_Blue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Blue Sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sword_Golden</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A golden sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sword_Golden</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Golden Sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Tomb_Raider</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for finding the graveyard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tomb_Raider</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tomb Raider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Treasure</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A treasure that can be found in the game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Treasure</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Treasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Underground</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for exploring a cave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Underground</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Underground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A weapon type of item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Weapon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon_Axe</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A basic axe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon_Axe</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Basic Axe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon_Morningstar</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A morningstar weapon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon_Morningstar</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Morningstar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon_Red_Sword</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A red sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon_Red_Sword</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Red Sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon_Sword_1</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A sword of type 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon_Sword_1</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Weapon_Sword_2</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A second type of sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Weapon_Sword_2</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword 2</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
