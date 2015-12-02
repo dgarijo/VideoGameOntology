@@ -1,0 +1,200 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://w3id.org/games/spec/asteroids#> .
+
+<http://w3id.org/games/spec/asteroids#> rdf:type :Ontology ;
+	rdfs:label "Asteroids Ontology"@en;
+	rdfs:comment "Extension of the video game ontology to represent the main concepts of the game Asteroids"@en;
+	terms:title "Asteroids Videogame Ontology"@en;
+	terms:created "02-13-2015"^^xsd:date;
+	terms:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
+	terms:contributor <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
+	vann:preferredNamespaceUri <http://w3id.org/games/spec/asteroids#>;
+    vann:preferredNamespacePrefix "asteroids";
+	owl:versionInfo 1.0;
+	terms:description "Extension of the video game ontology to represent the main concepts of the game Asteroids"@en;
+	terms:license <http://creativecommons.org/licenses/by-nc-sa/2.0/>.
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.org/net/VideoGameOntology#Achievement
+
+<http://purl.org/net/VideoGameOntology#Achievement> rdf:type :Class.
+
+
+
+###  http://purl.org/net/VideoGameOntology#Completion
+
+<http://purl.org/net/VideoGameOntology#Completion> rdf:type :Class ;
+                                                   
+                                                   rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#Fandom
+
+<http://purl.org/net/VideoGameOntology#Fandom> rdf:type :Class ;
+                                               
+                                               rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#GameEvent
+
+<http://purl.org/net/VideoGameOntology#GameEvent> rdf:type :Class ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.org/net/VideoGameOntology#InstantaneousEvent> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#Genre
+
+<http://purl.org/net/VideoGameOntology#Genre> rdf:type :Class .
+
+
+
+###  http://purl.org/net/VideoGameOntology#InstantaneousEvent
+
+<http://purl.org/net/VideoGameOntology#InstantaneousEvent> rdf:type :Class .
+
+
+
+###  http://purl.org/net/VideoGameOntology#SpecialPlayStyle
+
+<http://purl.org/net/VideoGameOntology#SpecialPlayStyle> rdf:type :Class ;
+                                                         
+                                                         rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#Tutorial
+
+<http://purl.org/net/VideoGameOntology#Tutorial> rdf:type :Class ;
+                                                 
+                                                 rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Arcade
+
+<http://w3id.org/games/spec/asteroids#Arcade> rdf:type :Class ;
+                                               
+                                               rdfs:label "Arcade"@en ;
+                                               
+                                               rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Genre> ;
+                                               
+                                               rdfs:comment "An arcade type of game"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Asteroids_Game_Over
+
+<http://w3id.org/games/spec/asteroids#Asteroids_Game_Over> rdf:type :Class ;
+                                                            
+                                                            rdfs:label "Game Over" ;
+                                                            
+                                                            rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                            
+                                                            rdfs:comment "Game over event"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Asteroids_Player_Dies
+
+<http://w3id.org/games/spec/asteroids#Asteroids_Player_Dies> rdf:type :Class ;
+                                                              
+                                                              rdfs:label "Player Dies" ;
+                                                              
+                                                              rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                              
+                                                              rdfs:comment "An event of player losing a ship in the game"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game
+
+<http://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game> rdf:type :Class ;
+                                                                 
+                                                                 rdfs:label "Start New Game" ;
+                                                                 
+                                                                 rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                                 
+                                                                 rdfs:comment "An event of player starting a new game of Asteroids"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Destory_First_Asteroid
+
+<http://w3id.org/games/spec/asteroids#Destory_First_Asteroid> rdf:type :Class ;
+                                                               
+                                                               rdfs:label "Destroy First Asteroid" ;
+                                                               
+                                                               rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Tutorial> ;
+                                                               
+                                                               rdfs:comment "An achievement for destroying the first asteroid in the game"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Idler
+
+<http://w3id.org/games/spec/asteroids#Idler> rdf:type :Class ;
+                                              
+                                              rdfs:label "Idler" ;
+                                              
+                                              rdfs:subClassOf <http://purl.org/net/VideoGameOntology#SpecialPlayStyle> ;
+                                              
+                                              rdfs:comment "Achievement given from idling in the game for a certain amount of time"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#New_Player
+
+<http://w3id.org/games/spec/asteroids#New_Player> rdf:type :Class ;
+                                                   
+                                                   rdfs:label "New Player" ;
+                                                   
+                                                   rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Tutorial> ;
+                                                   
+                                                   rdfs:comment "Given when a new player starts the game."@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Score_1000_Points
+
+<http://w3id.org/games/spec/asteroids#Score_1000_Points> rdf:type :Class ;
+                                                          
+                                                          rdfs:label "Score 1000 Points" ;
+                                                          
+                                                          rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Completion> ;
+                                                          
+                                                          rdfs:comment "An achievement that is given for scoring 1000 points in the game"@en .
+
+
+
+###  http://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row
+
+<http://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row> rdf:type :Class ;
+                                                           
+                                                           rdfs:label "10 Games in a Row" ;
+                                                           
+                                                           rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Fandom> ;
+                                                           
+                                                           rdfs:comment "An achievement given from playing 10 games in a row."@en .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

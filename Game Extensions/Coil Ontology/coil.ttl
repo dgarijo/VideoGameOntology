@@ -1,0 +1,196 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://w3id.org/games/spec/coil#> .
+
+<http://w3id.org/games/spec/coil#> rdf:type :Ontology ;
+	rdfs:label "Coil Ontology"@en;
+	rdfs:comment "Extension of the video game ontology to represent the main concepts of the game Coil"@en;
+	terms:title "Coil Videogame Ontology"@en;
+	terms:created "02-13-2015"^^xsd:date;
+	terms:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
+	terms:contributor <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
+	vann:preferredNamespaceUri <http://w3id.org/games/spec/coil#>;
+    vann:preferredNamespacePrefix "coil";
+	owl:versionInfo 1.0;
+	terms:description "Extension of the video game ontology to represent the main concepts of the game Coil"@en;
+	terms:license <http://creativecommons.org/licenses/by-nc-sa/2.0/>.
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.org/net/VideoGameOntology#Achievement
+
+<http://purl.org/net/VideoGameOntology#Achievement> rdf:type :Class .
+
+
+
+###  http://purl.org/net/VideoGameOntology#GameEvent
+
+<http://purl.org/net/VideoGameOntology#GameEvent> rdf:type :Class ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.org/net/VideoGameOntology#InstantaneousEvent> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#Genre
+
+<http://purl.org/net/VideoGameOntology#Genre> rdf:type :Class .
+
+
+
+###  http://purl.org/net/VideoGameOntology#HardMode
+
+<http://purl.org/net/VideoGameOntology#HardMode> rdf:type :Class ;
+                                                 
+                                                 rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://purl.org/net/VideoGameOntology#InstantaneousEvent
+
+<http://purl.org/net/VideoGameOntology#InstantaneousEvent> rdf:type :Class .
+
+
+
+###  http://purl.org/net/VideoGameOntology#Tutorial
+
+<http://purl.org/net/VideoGameOntology#Tutorial> rdf:type :Class ;
+                                                 
+                                                 rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Achievement> .
+
+
+
+###  http://w3id.org/games/spec/coil#Arcade
+
+<http://w3id.org/games/spec/coil#Arcade> rdf:type :Class ;
+                                          
+                                          rdfs:label "Arcade"@en ;
+                                          
+                                          rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Genre> ;
+                                          
+                                          rdfs:comment "An arcade type of game"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age
+
+<http://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age> rdf:type :Class ;
+                                                        
+                                                        rdfs:label "Bomb Die of Age"@en ;
+                                                        
+                                                        rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                        
+                                                        rdfs:comment "An event of bomb dying of age"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row
+
+<http://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row> rdf:type :Class ;
+                                                           
+                                                           rdfs:label "Circle 10 in a Row"@en ;
+                                                           
+                                                           rdfs:subClassOf <http://purl.org/net/VideoGameOntology#HardMode> ;
+                                                           
+                                                           rdfs:comment "An achievement given for circling 10 enemies at a same time"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Enclose_Bomb
+
+<http://w3id.org/games/spec/coil#Coil_Enclose_Bomb> rdf:type :Class ;
+                                                     
+                                                     rdfs:label "Enclose Bomb"@en ;
+                                                     
+                                                     rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                     
+                                                     rdfs:comment "An event of player enclosing a bomb"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Enclose_Enemy
+
+<http://w3id.org/games/spec/coil#Coil_Enclose_Enemy> rdf:type :Class ;
+                                                      
+                                                      rdfs:label "Enclose Enemy"@en ;
+                                                      
+                                                      rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                      
+                                                      rdfs:comment "An event of player enclosing an enemy"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age
+
+<http://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age> rdf:type :Class ;
+                                                         
+                                                         rdfs:label "Enemy Die of Age"@en ;
+                                                         
+                                                         rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                         
+                                                         rdfs:comment "An event of enemy dying of age"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Fail_Circling
+
+<http://w3id.org/games/spec/coil#Coil_Fail_Circling> rdf:type :Class ;
+                                                      
+                                                      rdfs:label "Fail Circling"@en ;
+                                                      
+                                                      rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Tutorial> ;
+                                                      
+                                                      rdfs:comment "An achievement given for failing in circling an enemy"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Game_Over
+
+<http://w3id.org/games/spec/coil#Coil_Game_Over> rdf:type :Class ;
+                                                  
+                                                  rdfs:label "Game Over"@en ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                  
+                                                  rdfs:comment "A Game Over event"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_Learn_To_Circle
+
+<http://w3id.org/games/spec/coil#Coil_Learn_To_Circle> rdf:type :Class ;
+                                                        
+                                                        rdfs:label "Learn to Circle"@en ;
+                                                        
+                                                        rdfs:subClassOf <http://purl.org/net/VideoGameOntology#Tutorial> ;
+                                                        
+                                                        rdfs:comment "An achievement given for learning to circle"@en .
+
+
+
+###  http://w3id.org/games/spec/coil#Coil_New_Game
+
+<http://w3id.org/games/spec/coil#Coil_New_Game> rdf:type :Class ;
+                                                 
+                                                 rdfs:label "New Game"@en ;
+                                                 
+                                                 rdfs:subClassOf <http://purl.org/net/VideoGameOntology#GameEvent> ;
+                                                 
+                                                 rdfs:comment "A New Game Event"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

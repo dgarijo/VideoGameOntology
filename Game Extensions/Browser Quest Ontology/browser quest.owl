@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 
 
-<!DOCTYPE Ontology [
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -9,1163 +12,754 @@
 ]>
 
 
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://w3id.org/games/spec/browserquest#"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://w3id.org/games/spec/browserquest#">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="A_True_Warrior"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Angry_Rats"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Blue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Cloth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Firefox"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Golden"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Leather"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Mail"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Plate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Armor_Red"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="At_Worlds_End"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Axe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Burger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Cake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Chest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Club"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Coward"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Fat_Loot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Fire_Potion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Flask"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Food"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="For_Science"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Foxy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Hero"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Hot_Spot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Hunter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Into_The_Wild"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="KillEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Bat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Boss"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Crab"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Death_Knight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Eye"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Goblin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Ogre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Rat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Skeleton"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Skeleton_2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Snake"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Spectre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Kill_Wizard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Meatshield"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Ninja_Loot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="No_Mans_Land"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Player_Clicked_Asteroids_Link"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Potion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="RPG"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Rickrolld"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Skull_Collector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Small_Talk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Still_Alive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Sword"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Sword_Blue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Sword_Golden"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Tomb_Raider"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Treasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Underground"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon_Axe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon_Morningstar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon_Red_Sword"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon_Sword_1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Weapon_Sword_2"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="A_True_Warrior"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Angry_Rats"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Blue"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Cloth"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Firefox"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Golden"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Leather"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Mail"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Plate"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Armor_Red"/>
-        <Class IRI="Armor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="At_Worlds_End"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Axe"/>
-        <Class IRI="Weapon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Burger"/>
-        <Class IRI="Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Cake"/>
-        <Class IRI="Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Chest"/>
-        <Class IRI="Treasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Club"/>
-        <Class IRI="Weapon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Coward"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Fat_Loot"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Fire_Potion"/>
-        <Class IRI="Potion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Flask"/>
-        <Class IRI="Potion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Food"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="For_Science"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Foxy"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Hero"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Hot_Spot"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Hunter"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Into_The_Wild"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="KillEvent"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#GameEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Bat"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Boss"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Crab"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Death_Knight"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Eye"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Goblin"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Ogre"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Rat"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Skeleton"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Skeleton_2"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Snake"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Spectre"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Kill_Wizard"/>
-        <Class IRI="KillEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Meatshield"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Ninja_Loot"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="No_Mans_Land"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Player_Clicked_Asteroids_Link"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Potion"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="RPG"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Genre"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Rickrolld"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Skull_Collector"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Small_Talk"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Still_Alive"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Sword"/>
-        <Class IRI="Weapon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Sword_Blue"/>
-        <Class IRI="Sword"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Sword_Golden"/>
-        <Class IRI="Sword"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Tomb_Raider"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Completion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Treasure"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Underground"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Curiosity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon"/>
-        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon_Axe"/>
-        <Class IRI="Axe"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon_Morningstar"/>
-        <Class IRI="Club"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon_Red_Sword"/>
-        <Class IRI="Sword"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon_Sword_1"/>
-        <Class IRI="Sword"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Weapon_Sword_2"/>
-        <Class IRI="Sword"/>
-    </SubClassOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>A_True_Warrior</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A achievement given for finding a new weapon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>A_True_Warrior</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A True Warrior</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Angry_Rats</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement for killing 10 rats</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Angry_Rats</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Angry Rats</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An armor type of item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Blue</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A blue armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Blue</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Blue Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Cloth</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A cloth armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Cloth</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cloth Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Firefox</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A firefox armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Firefox</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Firefox Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Golden</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A golden armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Golden</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Golden Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Leather</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A leather armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Leather</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Leather Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Mail</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A mail armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Mail</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mail Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Plate</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A plate armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Plate</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Plate Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Armor_Red</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A red armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Armor_Red</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Red Armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>At_Worlds_End</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for reaching the south shore</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>At_Worlds_End</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">At World&apos;s End</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Axe</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Axe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Axe</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Axe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Burger</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A burger to eat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Burger</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Burger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Cake</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An edible cake</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Cake</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cake</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Chest</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A treasure chest that can be opened</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Chest</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chest</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Club</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A club type of weapon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Club</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Club</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Coward</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for succesfully escaping an enemy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Coward</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coward</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Fat_Loot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for getting a new set of armor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Fat_Loot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fat Loot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Fire_Potion</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A fire potion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Fire_Potion</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fire Potion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Flask</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A flask item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Flask</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Flask</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Food</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Consumable Food Item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Food</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Food</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>For_Science</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for entering into a portal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>For_Science</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">For Science</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Foxy</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for finding the Firefox costume</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Foxy</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Foxy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Hero</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for defeating the final boss</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Hero</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hero</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Hot_Spot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for entering the volcanic mountains</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Hot_Spot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hot Spot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Hunter</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for killing 50 enemies</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Hunter</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Into_The_Wild</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for venturing outside the village</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Into_The_Wild</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Into the Wild</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>KillEvent</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of killing something</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>KillEvent</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Bat</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a bat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Bat</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Bat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Boss</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill the final boss</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Boss</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Boss</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Crab</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a crab</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Crab</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Crab</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Death_Knight</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Death Knight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Death_Knight</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Death Knight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Eye</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill an Eye</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Eye</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Eye</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Goblin</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Goblin</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Goblin</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Goblin</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Ogre</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill an Ogre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Ogre</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Ogre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Rat</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Rat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Rat</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Rat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Skeleton</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Skeleton</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Skeleton</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Skeleton</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Skeleton_2</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a skeletong of type 2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Skeleton_2</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Skeleton 2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Snake</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Snake</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Snake</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Snake</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Spectre</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Spectre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Spectre</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Spectre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Kill_Wizard</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill a Wizard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Kill_Wizard</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kill Wizard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Meatshield</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for receiving 5 000 points of damage</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Meatshield</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Meatshield</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Ninja_Loot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for getting hold of loot you didn&apos;t fight for</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Ninja_Loot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ninja Loot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>No_Mans_Land</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for travelling through the desert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>No_Mans_Land</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">No Man&apos;s Land</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Player_Clicked_Asteroids_Link</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event of player clicking a link to the Asteroids game</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Player_Clicked_Asteroids_Link</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Player Clicked Asteroid&apos;s Link</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Potion</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A potable potion item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Potion</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Potion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>RPG</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Role-playing Game Genre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>RPG</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">RPG</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Rickrolld</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for taking some singing lessons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Rickrolld</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">RickRoll&apos;d</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Skull_Collector</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for killing 10 skeletons</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Skull_Collector</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Skull Collector</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Small_Talk</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Achievement given for talking to a non-player character</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Small_Talk</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Small Talk</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Still_Alive</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for reviving yourself five times</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Still_Alive</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Still Alive</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Sword</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A sword type of item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Sword</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Sword_Blue</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A blue sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Sword_Blue</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Blue Sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Sword_Golden</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A golden sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Sword_Golden</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Golden Sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Tomb_Raider</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for finding the graveyard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Tomb_Raider</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tomb Raider</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Treasure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A treasure that can be found in the game</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Treasure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Treasure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Underground</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An achievement given for exploring a cave</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Underground</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Underground</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A weapon type of item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Weapon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon_Axe</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A basic axe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon_Axe</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Basic Axe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon_Morningstar</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A morningstar weapon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon_Morningstar</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Morningstar</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon_Red_Sword</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A red sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon_Red_Sword</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Red Sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon_Sword_1</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A sword of type 1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon_Sword_1</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword 1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Weapon_Sword_2</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A second type of sword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Weapon_Sword_2</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sword 2</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <Ontology rdf:about="http://w3id.org/games/spec/browserquest#">
+        <rdfs:label xml:lang="en">Browser Quest Ontology</rdfs:label>
+        <terms:created rdf:datatype="&xsd;date">02-13-2015</terms:created>
+        <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+        <vann:preferredNamespacePrefix>browserquest</vann:preferredNamespacePrefix>
+        <terms:title xml:lang="en">Browser Quest Videogame Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Browser Quest</rdfs:comment>
+        <terms:description xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Browser Quest</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/"/>
+        <terms:contributor rdf:resource="http://delicias.dia.fi.upm.es/members/DGarijo/#me"/>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/games/spec/browserquest#"/>
+        <terms:creator rdf:resource="http://www.mendeley.com/profiles/janne-parkkila/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Achievement -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Achievement"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Collection -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Collection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Completion -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Completion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Curiosity -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Curiosity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GameEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#GameEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Genre -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Genre"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#InstantaneousEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Item -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Item"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#PlayerEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#PlayerEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#SpecialPlayStyle -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#A_True_Warrior -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#A_True_Warrior">
+        <rdfs:label xml:lang="en">A True Warrior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">A achievement given for finding a new weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Angry_Rats -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Angry_Rats">
+        <rdfs:label xml:lang="en">Angry Rats</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement for killing 10 rats</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor">
+        <rdfs:label xml:lang="en">Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">An armor type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Blue -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Blue">
+        <rdfs:label xml:lang="en">Blue Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A blue armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Cloth -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Cloth">
+        <rdfs:label xml:lang="en">Cloth Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A cloth armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Firefox -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Firefox">
+        <rdfs:label xml:lang="en">Firefox Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A firefox armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Golden -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Golden">
+        <rdfs:label xml:lang="en">Golden Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A golden armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Leather -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Leather">
+        <rdfs:label xml:lang="en">Leather Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A leather armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Mail -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Mail">
+        <rdfs:label xml:lang="en">Mail Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A mail armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Plate -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Plate">
+        <rdfs:label xml:lang="en">Plate Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A plate armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Armor_Red -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Armor_Red">
+        <rdfs:label xml:lang="en">Red Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A red armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#At_Worlds_End -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#At_Worlds_End">
+        <rdfs:label xml:lang="en">At World&apos;s End</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for reaching the south shore</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Axe -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Axe">
+        <rdfs:label xml:lang="en">Axe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">Axe</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Burger -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Burger">
+        <rdfs:label xml:lang="en">Burger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Food"/>
+        <rdfs:comment xml:lang="en">A burger to eat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Cake -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Cake">
+        <rdfs:label xml:lang="en">Cake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Food"/>
+        <rdfs:comment xml:lang="en">An edible cake</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Chest -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Chest">
+        <rdfs:label xml:lang="en">Chest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Treasure"/>
+        <rdfs:comment xml:lang="en">A treasure chest that can be opened</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Club -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Club">
+        <rdfs:label xml:lang="en">Club</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">A club type of weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Coward -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Coward">
+        <rdfs:label xml:lang="en">Coward</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">An achievement given for succesfully escaping an enemy</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Fat_Loot -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Fat_Loot">
+        <rdfs:label xml:lang="en">Fat Loot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">An achievement given for getting a new set of armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Fire_Potion -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Fire_Potion">
+        <rdfs:label xml:lang="en">Fire Potion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Potion"/>
+        <rdfs:comment xml:lang="en">A fire potion</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Flask -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Flask">
+        <rdfs:label xml:lang="en">Flask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Potion"/>
+        <rdfs:comment xml:lang="en">A flask item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Food -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Food">
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">Consumable Food Item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#For_Science -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#For_Science">
+        <rdfs:label xml:lang="en">For Science</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for entering into a portal</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Foxy -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Foxy">
+        <rdfs:label xml:lang="en">Foxy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for finding the Firefox costume</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Hero -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Hero">
+        <rdfs:label xml:lang="en">Hero</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for defeating the final boss</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Hot_Spot -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Hot_Spot">
+        <rdfs:label xml:lang="en">Hot Spot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">Achievement given for entering the volcanic mountains</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Hunter -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Hunter">
+        <rdfs:label xml:lang="en">Hunter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">An achievement given for killing 50 enemies</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Into_The_Wild -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Into_The_Wild">
+        <rdfs:label xml:lang="en">Into the Wild</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for venturing outside the village</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#KillEvent -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#KillEvent">
+        <rdfs:label xml:lang="en">Kill Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">An event of killing something</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Bat -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Bat">
+        <rdfs:label xml:lang="en">Kill Bat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a bat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Boss -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Boss">
+        <rdfs:label xml:lang="en">Kill Boss</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill the final boss</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Crab -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Crab">
+        <rdfs:label xml:lang="en">Kill Crab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a crab</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Death_Knight -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Death_Knight">
+        <rdfs:label xml:lang="en">Kill Death Knight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Death Knight</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Eye -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Eye">
+        <rdfs:label xml:lang="en">Kill Eye</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill an Eye</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Goblin -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Goblin">
+        <rdfs:label xml:lang="en">Kill Goblin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Goblin</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Ogre -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Ogre">
+        <rdfs:label xml:lang="en">Kill Ogre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill an Ogre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Rat -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Rat">
+        <rdfs:label xml:lang="en">Kill Rat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Rat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Skeleton -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Skeleton">
+        <rdfs:label xml:lang="en">Kill Skeleton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Skeleton</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Skeleton_2 -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Skeleton_2">
+        <rdfs:label xml:lang="en">Kill Skeleton 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a skeletong of type 2</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Snake -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Snake">
+        <rdfs:label xml:lang="en">Kill Snake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Snake</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Spectre -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Spectre">
+        <rdfs:label xml:lang="en">Kill Spectre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Spectre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Kill_Wizard -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Kill_Wizard">
+        <rdfs:label xml:lang="en">Kill Wizard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Wizard</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Meatshield -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Meatshield">
+        <rdfs:label xml:lang="en">Meatshield</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">Achievement given for receiving 5 000 points of damage</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Ninja_Loot -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Ninja_Loot">
+        <rdfs:label xml:lang="en">Ninja Loot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for getting hold of loot you didn&apos;t fight for</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#No_Mans_Land -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#No_Mans_Land">
+        <rdfs:label xml:lang="en">No Man&apos;s Land</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">Achievement given for travelling through the desert</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link">
+        <rdfs:label xml:lang="en">Player Clicked Asteroid&apos;s Link</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+        <rdfs:comment xml:lang="en">An event of player clicking a link to the Asteroids game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Potion -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Potion">
+        <rdfs:label xml:lang="en">Potion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A potable potion item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#RPG -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#RPG">
+        <rdfs:label xml:lang="en">RPG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Genre"/>
+        <rdfs:comment xml:lang="en">A Role-playing Game Genre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Rickrolld -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Rickrolld">
+        <rdfs:label xml:lang="en">RickRoll&apos;d</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">Achievement given for taking some singing lessons</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Skull_Collector -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Skull_Collector">
+        <rdfs:label xml:lang="en">Skull Collector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">An achievement given for killing 10 skeletons</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Small_Talk -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Small_Talk">
+        <rdfs:label xml:lang="en">Small Talk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for talking to a non-player character</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Still_Alive -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Still_Alive">
+        <rdfs:label xml:lang="en">Still Alive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for reviving yourself five times</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Sword -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Sword">
+        <rdfs:label xml:lang="en">Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">A sword type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Sword_Blue -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Sword_Blue">
+        <rdfs:label xml:lang="en">Blue Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A blue sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Sword_Golden -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Sword_Golden">
+        <rdfs:label xml:lang="en">Golden Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A golden sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Tomb_Raider -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Tomb_Raider">
+        <rdfs:label xml:lang="en">Tomb Raider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for finding the graveyard</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Treasure -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Treasure">
+        <rdfs:label xml:lang="en">Treasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A treasure that can be found in the game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Underground -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Underground">
+        <rdfs:label xml:lang="en">Underground</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">An achievement given for exploring a cave</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon">
+        <rdfs:label xml:lang="en">Weapon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A weapon type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon_Axe -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon_Axe">
+        <rdfs:label xml:lang="en">Basic Axe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Axe"/>
+        <rdfs:comment xml:lang="en">A basic axe</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon_Morningstar -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon_Morningstar">
+        <rdfs:label xml:lang="en">Morningstar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Club"/>
+        <rdfs:comment xml:lang="en">A morningstar weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon_Red_Sword -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon_Red_Sword">
+        <rdfs:label xml:lang="en">Red Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A red sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon_Sword_1 -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon_Sword_1">
+        <rdfs:label xml:lang="en">Sword 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A sword of type 1</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/games/spec/browserquest#Weapon_Sword_2 -->
+
+    <Class rdf:about="http://w3id.org/games/spec/browserquest#Weapon_Sword_2">
+        <rdfs:label xml:lang="en">Sword 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A second type of sword</rdfs:comment>
+    </Class>
+</rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
