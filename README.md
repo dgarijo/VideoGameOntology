@@ -7,6 +7,14 @@ The latest version of the Video Game Ontology can be browsed online in the follo
 
 http://purl.org/net/VideoGameOntology
 
+The development version is available on Github: http://dgarijo.github.io/VideoGameOntology/VGODocumentation/
+
+The game extensions are also available in gihtub:
+
+* Asteroids:
+* Browser quest: 
+* Coil:
+
 
 Authors:
 
