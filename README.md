@@ -11,9 +11,9 @@ The development version is available on Github: http://dgarijo.github.io/VideoGa
 
 The game extensions are also available in gihtub:
 
-* Asteroids:
-* Browser quest: 
-* Coil:
+* Asteroids: http://dgarijo.github.io/VideoGameOntology/GameExtensions/AsteroidsOntology/asteroidsDoc/
+* Browser quest: http://http://dgarijo.github.io/VideoGameOntology/GameExtensions/BrowserQuestOntology/browserDoc/
+* Coil: http://http://dgarijo.github.io/VideoGameOntology/GameExtensions/CoilOntology/coilDoc/
 
 
 Authors:
