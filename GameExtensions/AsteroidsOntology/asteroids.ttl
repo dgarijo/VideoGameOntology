@@ -6,16 +6,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@base <http://w3id.org/games/spec/asteroids#> .
+@base <https://w3id.org/games/spec/asteroids#> .
 
-<http://w3id.org/games/spec/asteroids#> rdf:type :Ontology ;
+<https://w3id.org/games/spec/asteroids#> rdf:type :Ontology ;
 	rdfs:label "Asteroids Ontology"@en;
 	rdfs:comment "Extension of the video game ontology to represent the main concepts of the game Asteroids"@en;
 	terms:title "Asteroids Videogame Ontology"@en;
 	terms:created "02-13-2015"^^xsd:date;
 	terms:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
 	terms:contributor <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
-	vann:preferredNamespaceUri <http://w3id.org/games/spec/asteroids#>;
+	vann:preferredNamespaceUri <https://w3id.org/games/spec/asteroids#>;
     vann:preferredNamespacePrefix "asteroids";
 	owl:versionInfo 1.0;
 	terms:description "Extension of the video game ontology to represent the main concepts of the game Asteroids"@en;
@@ -87,9 +87,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Arcade
+###  https://w3id.org/games/spec/asteroids#Arcade
 
-<http://w3id.org/games/spec/asteroids#Arcade> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Arcade> rdf:type :Class ;
                                                
                                                rdfs:label "Arcade"@en ;
                                                
@@ -99,9 +99,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Asteroids_Game_Over
+###  https://w3id.org/games/spec/asteroids#Asteroids_Game_Over
 
-<http://w3id.org/games/spec/asteroids#Asteroids_Game_Over> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Asteroids_Game_Over> rdf:type :Class ;
                                                             
                                                             rdfs:label "Game Over" ;
                                                             
@@ -111,9 +111,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Asteroids_Player_Dies
+###  https://w3id.org/games/spec/asteroids#Asteroids_Player_Dies
 
-<http://w3id.org/games/spec/asteroids#Asteroids_Player_Dies> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Asteroids_Player_Dies> rdf:type :Class ;
                                                               
                                                               rdfs:label "Player Dies" ;
                                                               
@@ -123,9 +123,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game
+###  https://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game
 
-<http://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game> rdf:type :Class ;
                                                                  
                                                                  rdfs:label "Start New Game" ;
                                                                  
@@ -135,9 +135,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Destory_First_Asteroid
+###  https://w3id.org/games/spec/asteroids#Destory_First_Asteroid
 
-<http://w3id.org/games/spec/asteroids#Destory_First_Asteroid> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Destory_First_Asteroid> rdf:type :Class ;
                                                                
                                                                rdfs:label "Destroy First Asteroid" ;
                                                                
@@ -147,9 +147,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Idler
+###  https://w3id.org/games/spec/asteroids#Idler
 
-<http://w3id.org/games/spec/asteroids#Idler> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Idler> rdf:type :Class ;
                                               
                                               rdfs:label "Idler" ;
                                               
@@ -159,9 +159,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#New_Player
+###  https://w3id.org/games/spec/asteroids#New_Player
 
-<http://w3id.org/games/spec/asteroids#New_Player> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#New_Player> rdf:type :Class ;
                                                    
                                                    rdfs:label "New Player" ;
                                                    
@@ -171,9 +171,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Score_1000_Points
+###  https://w3id.org/games/spec/asteroids#Score_1000_Points
 
-<http://w3id.org/games/spec/asteroids#Score_1000_Points> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Score_1000_Points> rdf:type :Class ;
                                                           
                                                           rdfs:label "Score 1000 Points" ;
                                                           
@@ -183,9 +183,9 @@
 
 
 
-###  http://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row
+###  https://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row
 
-<http://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row> rdf:type :Class ;
+<https://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row> rdf:type :Class ;
                                                            
                                                            rdfs:label "10 Games in a Row" ;
                                                            

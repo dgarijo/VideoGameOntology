@@ -6,16 +6,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@base <http://w3id.org/games/spec/browserquest#> .
+@base <https://w3id.org/games/spec/browserquest#> .
 
-<http://w3id.org/games/spec/browserquest#> rdf:type :Ontology ;
+<https://w3id.org/games/spec/browserquest#> rdf:type :Ontology ;
 	rdfs:label "Browser Quest Ontology"@en;
 	rdfs:comment "Extension of the video game ontology to represent the main concepts of the game Browser Quest"@en;
 	terms:title "Browser Quest Videogame Ontology"@en;
 	terms:created "02-13-2015"^^xsd:date;
 	terms:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
 	terms:contributor <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
-	vann:preferredNamespaceUri <http://w3id.org/games/spec/browserquest#>;
+	vann:preferredNamespaceUri <https://w3id.org/games/spec/browserquest#>;
     vann:preferredNamespacePrefix "browserquest";
 	owl:versionInfo 1.0;
 	terms:description "Extension of the video game ontology to represent the main concepts of the game Browser Quest"@en;
@@ -100,9 +100,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#A_True_Warrior
+###  https://w3id.org/games/spec/browserquest#A_True_Warrior
 
-<http://w3id.org/games/spec/browserquest#A_True_Warrior> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#A_True_Warrior> rdf:type :Class ;
                                                           
                                                           rdfs:label "A True Warrior"@en ;
                                                           
@@ -112,9 +112,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Angry_Rats
+###  https://w3id.org/games/spec/browserquest#Angry_Rats
 
-<http://w3id.org/games/spec/browserquest#Angry_Rats> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Angry_Rats> rdf:type :Class ;
                                                       
                                                       rdfs:label "Angry Rats"@en ;
                                                       
@@ -124,9 +124,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor
+###  https://w3id.org/games/spec/browserquest#Armor
 
-<http://w3id.org/games/spec/browserquest#Armor> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor> rdf:type :Class ;
                                                  
                                                  rdfs:label "Armor"@en ;
                                                  
@@ -136,105 +136,105 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Blue
+###  https://w3id.org/games/spec/browserquest#Armor_Blue
 
-<http://w3id.org/games/spec/browserquest#Armor_Blue> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Blue> rdf:type :Class ;
                                                       
                                                       rdfs:label "Blue Armor"@en ;
                                                       
-                                                      rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                      rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                       
                                                       rdfs:comment "A blue armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Cloth
+###  https://w3id.org/games/spec/browserquest#Armor_Cloth
 
-<http://w3id.org/games/spec/browserquest#Armor_Cloth> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Cloth> rdf:type :Class ;
                                                        
                                                        rdfs:label "Cloth Armor"@en ;
                                                        
-                                                       rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                       rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                        
                                                        rdfs:comment "A cloth armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Firefox
+###  https://w3id.org/games/spec/browserquest#Armor_Firefox
 
-<http://w3id.org/games/spec/browserquest#Armor_Firefox> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Firefox> rdf:type :Class ;
                                                          
                                                          rdfs:label "Firefox Armor"@en ;
                                                          
-                                                         rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                         rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                          
                                                          rdfs:comment "A firefox armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Golden
+###  https://w3id.org/games/spec/browserquest#Armor_Golden
 
-<http://w3id.org/games/spec/browserquest#Armor_Golden> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Golden> rdf:type :Class ;
                                                         
                                                         rdfs:label "Golden Armor"@en ;
                                                         
-                                                        rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                        rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                         
                                                         rdfs:comment "A golden armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Leather
+###  https://w3id.org/games/spec/browserquest#Armor_Leather
 
-<http://w3id.org/games/spec/browserquest#Armor_Leather> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Leather> rdf:type :Class ;
                                                          
                                                          rdfs:label "Leather Armor"@en ;
                                                          
-                                                         rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                         rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                          
                                                          rdfs:comment "A leather armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Mail
+###  https://w3id.org/games/spec/browserquest#Armor_Mail
 
-<http://w3id.org/games/spec/browserquest#Armor_Mail> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Mail> rdf:type :Class ;
                                                       
                                                       rdfs:label "Mail Armor"@en ;
                                                       
-                                                      rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                      rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                       
                                                       rdfs:comment "A mail armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Plate
+###  https://w3id.org/games/spec/browserquest#Armor_Plate
 
-<http://w3id.org/games/spec/browserquest#Armor_Plate> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Plate> rdf:type :Class ;
                                                        
                                                        rdfs:label "Plate Armor"@en ;
                                                        
-                                                       rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                       rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                        
                                                        rdfs:comment "A plate armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Armor_Red
+###  https://w3id.org/games/spec/browserquest#Armor_Red
 
-<http://w3id.org/games/spec/browserquest#Armor_Red> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Armor_Red> rdf:type :Class ;
                                                      
                                                      rdfs:label "Red Armor"@en ;
                                                      
-                                                     rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Armor> ;
+                                                     rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Armor> ;
                                                      
                                                      rdfs:comment "A red armor"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#At_Worlds_End
+###  https://w3id.org/games/spec/browserquest#At_Worlds_End
 
-<http://w3id.org/games/spec/browserquest#At_Worlds_End> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#At_Worlds_End> rdf:type :Class ;
                                                          
                                                          rdfs:label "At World's End"@en ;
                                                          
@@ -244,69 +244,69 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Axe
+###  https://w3id.org/games/spec/browserquest#Axe
 
-<http://w3id.org/games/spec/browserquest#Axe> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Axe> rdf:type :Class ;
                                                
                                                rdfs:label "Axe"@en ;
                                                
-                                               rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Weapon> ;
+                                               rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Weapon> ;
                                                
                                                rdfs:comment "Axe"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Burger
+###  https://w3id.org/games/spec/browserquest#Burger
 
-<http://w3id.org/games/spec/browserquest#Burger> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Burger> rdf:type :Class ;
                                                   
                                                   rdfs:label "Burger"@en ;
                                                   
-                                                  rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Food> ;
+                                                  rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Food> ;
                                                   
                                                   rdfs:comment "A burger to eat"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Cake
+###  https://w3id.org/games/spec/browserquest#Cake
 
-<http://w3id.org/games/spec/browserquest#Cake> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Cake> rdf:type :Class ;
                                                 
                                                 rdfs:label "Cake"@en ;
                                                 
-                                                rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Food> ;
+                                                rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Food> ;
                                                 
                                                 rdfs:comment "An edible cake"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Chest
+###  https://w3id.org/games/spec/browserquest#Chest
 
-<http://w3id.org/games/spec/browserquest#Chest> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Chest> rdf:type :Class ;
                                                  
                                                  rdfs:label "Chest"@en ;
                                                  
-                                                 rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Treasure> ;
+                                                 rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Treasure> ;
                                                  
                                                  rdfs:comment "A treasure chest that can be opened"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Club
+###  https://w3id.org/games/spec/browserquest#Club
 
-<http://w3id.org/games/spec/browserquest#Club> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Club> rdf:type :Class ;
                                                 
                                                 rdfs:label "Club"@en ;
                                                 
-                                                rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Weapon> ;
+                                                rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Weapon> ;
                                                 
                                                 rdfs:comment "A club type of weapon"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Coward
+###  https://w3id.org/games/spec/browserquest#Coward
 
-<http://w3id.org/games/spec/browserquest#Coward> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Coward> rdf:type :Class ;
                                                   
                                                   rdfs:label "Coward"@en ;
                                                   
@@ -316,9 +316,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Fat_Loot
+###  https://w3id.org/games/spec/browserquest#Fat_Loot
 
-<http://w3id.org/games/spec/browserquest#Fat_Loot> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Fat_Loot> rdf:type :Class ;
                                                     
                                                     rdfs:label "Fat Loot"@en ;
                                                     
@@ -328,33 +328,33 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Fire_Potion
+###  https://w3id.org/games/spec/browserquest#Fire_Potion
 
-<http://w3id.org/games/spec/browserquest#Fire_Potion> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Fire_Potion> rdf:type :Class ;
                                                        
                                                        rdfs:label "Fire Potion"@en ;
                                                        
-                                                       rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Potion> ;
+                                                       rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Potion> ;
                                                        
                                                        rdfs:comment "A fire potion"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Flask
+###  https://w3id.org/games/spec/browserquest#Flask
 
-<http://w3id.org/games/spec/browserquest#Flask> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Flask> rdf:type :Class ;
                                                  
                                                  rdfs:label "Flask"@en ;
                                                  
-                                                 rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Potion> ;
+                                                 rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Potion> ;
                                                  
                                                  rdfs:comment "A flask item"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Food
+###  https://w3id.org/games/spec/browserquest#Food
 
-<http://w3id.org/games/spec/browserquest#Food> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Food> rdf:type :Class ;
                                                 
                                                 rdfs:label "Food"@en ;
                                                 
@@ -364,9 +364,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#For_Science
+###  https://w3id.org/games/spec/browserquest#For_Science
 
-<http://w3id.org/games/spec/browserquest#For_Science> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#For_Science> rdf:type :Class ;
                                                        
                                                        rdfs:label "For Science"@en ;
                                                        
@@ -376,9 +376,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Foxy
+###  https://w3id.org/games/spec/browserquest#Foxy
 
-<http://w3id.org/games/spec/browserquest#Foxy> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Foxy> rdf:type :Class ;
                                                 
                                                 rdfs:label "Foxy"@en ;
                                                 
@@ -388,9 +388,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Hero
+###  https://w3id.org/games/spec/browserquest#Hero
 
-<http://w3id.org/games/spec/browserquest#Hero> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Hero> rdf:type :Class ;
                                                 
                                                 rdfs:label "Hero"@en ;
                                                 
@@ -400,9 +400,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Hot_Spot
+###  https://w3id.org/games/spec/browserquest#Hot_Spot
 
-<http://w3id.org/games/spec/browserquest#Hot_Spot> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Hot_Spot> rdf:type :Class ;
                                                     
                                                     rdfs:label "Hot Spot"@en ;
                                                     
@@ -412,9 +412,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Hunter
+###  https://w3id.org/games/spec/browserquest#Hunter
 
-<http://w3id.org/games/spec/browserquest#Hunter> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Hunter> rdf:type :Class ;
                                                   
                                                   rdfs:label "Hunter"@en ;
                                                   
@@ -424,9 +424,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Into_The_Wild
+###  https://w3id.org/games/spec/browserquest#Into_The_Wild
 
-<http://w3id.org/games/spec/browserquest#Into_The_Wild> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Into_The_Wild> rdf:type :Class ;
                                                          
                                                          rdfs:label "Into the Wild"@en ;
                                                          
@@ -436,9 +436,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#KillEvent
+###  https://w3id.org/games/spec/browserquest#KillEvent
 
-<http://w3id.org/games/spec/browserquest#KillEvent> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#KillEvent> rdf:type :Class ;
                                                      
                                                      rdfs:label "Kill Event"@en ;
                                                      
@@ -448,165 +448,165 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Bat
+###  https://w3id.org/games/spec/browserquest#Kill_Bat
 
-<http://w3id.org/games/spec/browserquest#Kill_Bat> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Bat> rdf:type :Class ;
                                                     
                                                     rdfs:label "Kill Bat"@en ;
                                                     
-                                                    rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                    rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                     
                                                     rdfs:comment "Kill a bat"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Boss
+###  https://w3id.org/games/spec/browserquest#Kill_Boss
 
-<http://w3id.org/games/spec/browserquest#Kill_Boss> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Boss> rdf:type :Class ;
                                                      
                                                      rdfs:label "Kill Boss"@en ;
                                                      
-                                                     rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                     rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                      
                                                      rdfs:comment "Kill the final boss"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Crab
+###  https://w3id.org/games/spec/browserquest#Kill_Crab
 
-<http://w3id.org/games/spec/browserquest#Kill_Crab> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Crab> rdf:type :Class ;
                                                      
                                                      rdfs:label "Kill Crab"@en ;
                                                      
-                                                     rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                     rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                      
                                                      rdfs:comment "Kill a crab"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Death_Knight
+###  https://w3id.org/games/spec/browserquest#Kill_Death_Knight
 
-<http://w3id.org/games/spec/browserquest#Kill_Death_Knight> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Death_Knight> rdf:type :Class ;
                                                              
                                                              rdfs:label "Kill Death Knight"@en ;
                                                              
-                                                             rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                             rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                              
                                                              rdfs:comment "Kill a Death Knight"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Eye
+###  https://w3id.org/games/spec/browserquest#Kill_Eye
 
-<http://w3id.org/games/spec/browserquest#Kill_Eye> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Eye> rdf:type :Class ;
                                                     
                                                     rdfs:label "Kill Eye"@en ;
                                                     
-                                                    rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                    rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                     
                                                     rdfs:comment "Kill an Eye"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Goblin
+###  https://w3id.org/games/spec/browserquest#Kill_Goblin
 
-<http://w3id.org/games/spec/browserquest#Kill_Goblin> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Goblin> rdf:type :Class ;
                                                        
                                                        rdfs:label "Kill Goblin"@en ;
                                                        
-                                                       rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                       rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                        
                                                        rdfs:comment "Kill a Goblin"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Ogre
+###  https://w3id.org/games/spec/browserquest#Kill_Ogre
 
-<http://w3id.org/games/spec/browserquest#Kill_Ogre> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Ogre> rdf:type :Class ;
                                                      
                                                      rdfs:label "Kill Ogre"@en ;
                                                      
-                                                     rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                     rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                      
                                                      rdfs:comment "Kill an Ogre"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Rat
+###  https://w3id.org/games/spec/browserquest#Kill_Rat
 
-<http://w3id.org/games/spec/browserquest#Kill_Rat> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Rat> rdf:type :Class ;
                                                     
                                                     rdfs:label "Kill Rat"@en ;
                                                     
-                                                    rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                    rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                     
                                                     rdfs:comment "Kill a Rat"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Skeleton
+###  https://w3id.org/games/spec/browserquest#Kill_Skeleton
 
-<http://w3id.org/games/spec/browserquest#Kill_Skeleton> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Skeleton> rdf:type :Class ;
                                                          
                                                          rdfs:label "Kill Skeleton"@en ;
                                                          
-                                                         rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                         rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                          
                                                          rdfs:comment "Kill a Skeleton"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Skeleton_2
+###  https://w3id.org/games/spec/browserquest#Kill_Skeleton_2
 
-<http://w3id.org/games/spec/browserquest#Kill_Skeleton_2> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Skeleton_2> rdf:type :Class ;
                                                            
                                                            rdfs:label "Kill Skeleton 2"@en ;
                                                            
-                                                           rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                           rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                            
                                                            rdfs:comment "Kill a skeletong of type 2"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Snake
+###  https://w3id.org/games/spec/browserquest#Kill_Snake
 
-<http://w3id.org/games/spec/browserquest#Kill_Snake> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Snake> rdf:type :Class ;
                                                       
                                                       rdfs:label "Kill Snake"@en ;
                                                       
-                                                      rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                      rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                       
                                                       rdfs:comment "Kill a Snake"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Spectre
+###  https://w3id.org/games/spec/browserquest#Kill_Spectre
 
-<http://w3id.org/games/spec/browserquest#Kill_Spectre> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Spectre> rdf:type :Class ;
                                                         
                                                         rdfs:label "Kill Spectre"@en ;
                                                         
-                                                        rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                        rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                         
                                                         rdfs:comment "Kill a Spectre"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Kill_Wizard
+###  https://w3id.org/games/spec/browserquest#Kill_Wizard
 
-<http://w3id.org/games/spec/browserquest#Kill_Wizard> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Kill_Wizard> rdf:type :Class ;
                                                        
                                                        rdfs:label "Kill Wizard"@en ;
                                                        
-                                                       rdfs:subClassOf <http://w3id.org/games/spec/browserquest#KillEvent> ;
+                                                       rdfs:subClassOf <https://w3id.org/games/spec/browserquest#KillEvent> ;
                                                        
                                                        rdfs:comment "Kill a Wizard"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Meatshield
+###  https://w3id.org/games/spec/browserquest#Meatshield
 
-<http://w3id.org/games/spec/browserquest#Meatshield> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Meatshield> rdf:type :Class ;
                                                       
                                                       rdfs:label "Meatshield"@en ;
                                                       
@@ -616,9 +616,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Ninja_Loot
+###  https://w3id.org/games/spec/browserquest#Ninja_Loot
 
-<http://w3id.org/games/spec/browserquest#Ninja_Loot> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Ninja_Loot> rdf:type :Class ;
                                                       
                                                       rdfs:label "Ninja Loot"@en ;
                                                       
@@ -628,9 +628,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#No_Mans_Land
+###  https://w3id.org/games/spec/browserquest#No_Mans_Land
 
-<http://w3id.org/games/spec/browserquest#No_Mans_Land> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#No_Mans_Land> rdf:type :Class ;
                                                         
                                                         rdfs:label "No Man's Land"@en ;
                                                         
@@ -640,9 +640,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link
+###  https://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link
 
-<http://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link> rdf:type :Class ;
                                                                          
                                                                          rdfs:label "Player Clicked Asteroid's Link"@en ;
                                                                          
@@ -652,9 +652,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Potion
+###  https://w3id.org/games/spec/browserquest#Potion
 
-<http://w3id.org/games/spec/browserquest#Potion> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Potion> rdf:type :Class ;
                                                   
                                                   rdfs:label "Potion"@en ;
                                                   
@@ -664,9 +664,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#RPG
+###  https://w3id.org/games/spec/browserquest#RPG
 
-<http://w3id.org/games/spec/browserquest#RPG> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#RPG> rdf:type :Class ;
                                                
                                                rdfs:label "RPG"@en ;
                                                
@@ -676,9 +676,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Rickrolld
+###  https://w3id.org/games/spec/browserquest#Rickrolld
 
-<http://w3id.org/games/spec/browserquest#Rickrolld> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Rickrolld> rdf:type :Class ;
                                                      
                                                      rdfs:label "RickRoll'd"@en ;
                                                      
@@ -688,9 +688,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Skull_Collector
+###  https://w3id.org/games/spec/browserquest#Skull_Collector
 
-<http://w3id.org/games/spec/browserquest#Skull_Collector> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Skull_Collector> rdf:type :Class ;
                                                            
                                                            rdfs:label "Skull Collector"@en ;
                                                            
@@ -700,9 +700,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Small_Talk
+###  https://w3id.org/games/spec/browserquest#Small_Talk
 
-<http://w3id.org/games/spec/browserquest#Small_Talk> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Small_Talk> rdf:type :Class ;
                                                       
                                                       rdfs:label "Small Talk"@en ;
                                                       
@@ -712,9 +712,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Still_Alive
+###  https://w3id.org/games/spec/browserquest#Still_Alive
 
-<http://w3id.org/games/spec/browserquest#Still_Alive> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Still_Alive> rdf:type :Class ;
                                                        
                                                        rdfs:label "Still Alive"@en ;
                                                        
@@ -724,45 +724,45 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Sword
+###  https://w3id.org/games/spec/browserquest#Sword
 
-<http://w3id.org/games/spec/browserquest#Sword> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Sword> rdf:type :Class ;
                                                  
                                                  rdfs:label "Sword"@en ;
                                                  
-                                                 rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Weapon> ;
+                                                 rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Weapon> ;
                                                  
                                                  rdfs:comment "A sword type of item"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Sword_Blue
+###  https://w3id.org/games/spec/browserquest#Sword_Blue
 
-<http://w3id.org/games/spec/browserquest#Sword_Blue> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Sword_Blue> rdf:type :Class ;
                                                       
                                                       rdfs:label "Blue Sword"@en ;
                                                       
-                                                      rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Sword> ;
+                                                      rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Sword> ;
                                                       
                                                       rdfs:comment "A blue sword"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Sword_Golden
+###  https://w3id.org/games/spec/browserquest#Sword_Golden
 
-<http://w3id.org/games/spec/browserquest#Sword_Golden> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Sword_Golden> rdf:type :Class ;
                                                         
                                                         rdfs:label "Golden Sword"@en ;
                                                         
-                                                        rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Sword> ;
+                                                        rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Sword> ;
                                                         
                                                         rdfs:comment "A golden sword"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Tomb_Raider
+###  https://w3id.org/games/spec/browserquest#Tomb_Raider
 
-<http://w3id.org/games/spec/browserquest#Tomb_Raider> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Tomb_Raider> rdf:type :Class ;
                                                        
                                                        rdfs:label "Tomb Raider"@en ;
                                                        
@@ -772,9 +772,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Treasure
+###  https://w3id.org/games/spec/browserquest#Treasure
 
-<http://w3id.org/games/spec/browserquest#Treasure> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Treasure> rdf:type :Class ;
                                                     
                                                     rdfs:label "Treasure"@en ;
                                                     
@@ -784,9 +784,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Underground
+###  https://w3id.org/games/spec/browserquest#Underground
 
-<http://w3id.org/games/spec/browserquest#Underground> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Underground> rdf:type :Class ;
                                                        
                                                        rdfs:label "Underground"@en ;
                                                        
@@ -796,9 +796,9 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon
+###  https://w3id.org/games/spec/browserquest#Weapon
 
-<http://w3id.org/games/spec/browserquest#Weapon> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon> rdf:type :Class ;
                                                   
                                                   rdfs:label "Weapon"@en ;
                                                   
@@ -808,61 +808,61 @@
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon_Axe
+###  https://w3id.org/games/spec/browserquest#Weapon_Axe
 
-<http://w3id.org/games/spec/browserquest#Weapon_Axe> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon_Axe> rdf:type :Class ;
                                                       
                                                       rdfs:label "Basic Axe"@en ;
                                                       
-                                                      rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Axe> ;
+                                                      rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Axe> ;
                                                       
                                                       rdfs:comment "A basic axe"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon_Morningstar
+###  https://w3id.org/games/spec/browserquest#Weapon_Morningstar
 
-<http://w3id.org/games/spec/browserquest#Weapon_Morningstar> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon_Morningstar> rdf:type :Class ;
                                                               
                                                               rdfs:label "Morningstar"@en ;
                                                               
-                                                              rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Club> ;
+                                                              rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Club> ;
                                                               
                                                               rdfs:comment "A morningstar weapon"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon_Red_Sword
+###  https://w3id.org/games/spec/browserquest#Weapon_Red_Sword
 
-<http://w3id.org/games/spec/browserquest#Weapon_Red_Sword> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon_Red_Sword> rdf:type :Class ;
                                                             
                                                             rdfs:label "Red Sword"@en ;
                                                             
-                                                            rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Sword> ;
+                                                            rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Sword> ;
                                                             
                                                             rdfs:comment "A red sword"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon_Sword_1
+###  https://w3id.org/games/spec/browserquest#Weapon_Sword_1
 
-<http://w3id.org/games/spec/browserquest#Weapon_Sword_1> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon_Sword_1> rdf:type :Class ;
                                                           
                                                           rdfs:label "Sword 1"@en ;
                                                           
-                                                          rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Sword> ;
+                                                          rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Sword> ;
                                                           
                                                           rdfs:comment "A sword of type 1"@en .
 
 
 
-###  http://w3id.org/games/spec/browserquest#Weapon_Sword_2
+###  https://w3id.org/games/spec/browserquest#Weapon_Sword_2
 
-<http://w3id.org/games/spec/browserquest#Weapon_Sword_2> rdf:type :Class ;
+<https://w3id.org/games/spec/browserquest#Weapon_Sword_2> rdf:type :Class ;
                                                           
                                                           rdfs:label "Sword 2"@en ;
                                                           
-                                                          rdfs:subClassOf <http://w3id.org/games/spec/browserquest#Sword> ;
+                                                          rdfs:subClassOf <https://w3id.org/games/spec/browserquest#Sword> ;
                                                           
                                                           rdfs:comment "A second type of sword"@en .
 
