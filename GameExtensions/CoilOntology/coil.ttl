@@ -6,16 +6,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@base <http://w3id.org/games/spec/coil#> .
+@base <https://w3id.org/games/spec/coil#> .
 
-<http://w3id.org/games/spec/coil#> rdf:type :Ontology ;
+<https://w3id.org/games/spec/coil#> rdf:type :Ontology ;
 	rdfs:label "Coil Ontology"@en;
 	rdfs:comment "Extension of the video game ontology to represent the main concepts of the game Coil"@en;
 	terms:title "Coil Videogame Ontology"@en;
 	terms:created "02-13-2015"^^xsd:date;
 	terms:creator <http://www.mendeley.com/profiles/janne-parkkila/>;
 	terms:contributor <http://delicias.dia.fi.upm.es/members/DGarijo/#me>;
-	vann:preferredNamespaceUri <http://w3id.org/games/spec/coil#>;
+	vann:preferredNamespaceUri <https://w3id.org/games/spec/coil#>;
     vann:preferredNamespacePrefix "coil";
 	owl:versionInfo 1.0;
 	terms:description "Extension of the video game ontology to represent the main concepts of the game Coil"@en;
@@ -71,9 +71,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Arcade
+###  https://w3id.org/games/spec/coil#Arcade
 
-<http://w3id.org/games/spec/coil#Arcade> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Arcade> rdf:type :Class ;
                                           
                                           rdfs:label "Arcade"@en ;
                                           
@@ -83,9 +83,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age
+###  https://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age
 
-<http://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age> rdf:type :Class ;
                                                         
                                                         rdfs:label "Bomb Die of Age"@en ;
                                                         
@@ -95,9 +95,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row
+###  https://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row
 
-<http://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Circle_10_In_A_Row> rdf:type :Class ;
                                                            
                                                            rdfs:label "Circle 10 in a Row"@en ;
                                                            
@@ -107,9 +107,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Enclose_Bomb
+###  https://w3id.org/games/spec/coil#Coil_Enclose_Bomb
 
-<http://w3id.org/games/spec/coil#Coil_Enclose_Bomb> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Enclose_Bomb> rdf:type :Class ;
                                                      
                                                      rdfs:label "Enclose Bomb"@en ;
                                                      
@@ -119,9 +119,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Enclose_Enemy
+###  https://w3id.org/games/spec/coil#Coil_Enclose_Enemy
 
-<http://w3id.org/games/spec/coil#Coil_Enclose_Enemy> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Enclose_Enemy> rdf:type :Class ;
                                                       
                                                       rdfs:label "Enclose Enemy"@en ;
                                                       
@@ -131,9 +131,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age
+###  https://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age
 
-<http://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Enemy_Die_Of_Age> rdf:type :Class ;
                                                          
                                                          rdfs:label "Enemy Die of Age"@en ;
                                                          
@@ -143,9 +143,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Fail_Circling
+###  https://w3id.org/games/spec/coil#Coil_Fail_Circling
 
-<http://w3id.org/games/spec/coil#Coil_Fail_Circling> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Fail_Circling> rdf:type :Class ;
                                                       
                                                       rdfs:label "Fail Circling"@en ;
                                                       
@@ -155,9 +155,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Game_Over
+###  https://w3id.org/games/spec/coil#Coil_Game_Over
 
-<http://w3id.org/games/spec/coil#Coil_Game_Over> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Game_Over> rdf:type :Class ;
                                                   
                                                   rdfs:label "Game Over"@en ;
                                                   
@@ -167,9 +167,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_Learn_To_Circle
+###  https://w3id.org/games/spec/coil#Coil_Learn_To_Circle
 
-<http://w3id.org/games/spec/coil#Coil_Learn_To_Circle> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_Learn_To_Circle> rdf:type :Class ;
                                                         
                                                         rdfs:label "Learn to Circle"@en ;
                                                         
@@ -179,9 +179,9 @@
 
 
 
-###  http://w3id.org/games/spec/coil#Coil_New_Game
+###  https://w3id.org/games/spec/coil#Coil_New_Game
 
-<http://w3id.org/games/spec/coil#Coil_New_Game> rdf:type :Class ;
+<https://w3id.org/games/spec/coil#Coil_New_Game> rdf:type :Class ;
                                                  
                                                  rdfs:label "New Game"@en ;
                                                  
